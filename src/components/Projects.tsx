@@ -128,6 +128,14 @@ const moreProjects: Array<MinorProjects> = [
         github: 'https://github.com/syedwajihrizvi/lyriq_acc'
     },
     {
+        title: ' MPC for Cadillac Lyriq',
+        description: `Part of of my University's Alternate Vehicle team. I was tasked by Cadillac itself to program
+                      a Model Predictive Controller which was able to take in data from the surrounding traffic signal
+                      and determine a vehicle's velocity when approaching an intersection.`,
+        tools: ['python'],
+        github: 'https://github.com/syedwajihrizvi/lyriq_mpc'
+    },
+    {
         title: 'Renty',
         description: `When I was first attempting to expand my full stack knowledge, I built this application using
                       React 16, Express, and MongoDB. Its relatively simple and provides a user interface for managing a movie
