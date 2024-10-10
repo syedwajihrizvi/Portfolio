@@ -8,7 +8,7 @@ import paintVideoThree from "../assets/videos/paint3.mp4"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { MinorProjects, Project as ProjectType } from "../interfaces/Project"
-import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material"
+import { Accordion, AccordionSummary, AccordionDetails, Typography, Link } from "@mui/material"
 import { renderIcon } from "../utils/icons"
 
 const projects: Array<ProjectType> = [
@@ -97,8 +97,7 @@ const projects: Array<ProjectType> = [
         iframe: true,
         videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
         image: cscape,
-        github: 'url',
-        viewProject: 'url'
+        github: 'url'
     }
 ]
 
@@ -107,7 +106,8 @@ const moreProjects: Array<MinorProjects> = [
         title: 'Set',
         description: `An iOS application I built while taking Stanford University's CS193p course.
                       I mainly utilized Swift which is an OOP language and XCode.`,
-        tools: ['swift', 'xcode']
+        tools: ['swift', 'xcode'],
+        github: 'https://github.com/syedwajihrizvi/Set'
     },
     {
         title: 'Stock Web Scraper',
@@ -116,21 +116,24 @@ const moreProjects: Array<MinorProjects> = [
                       it was worth putting money into. Using AI mixed with my knowledge of investing, I was able
                       to build somewhat of an alogorithm to determine which stocks would be the best. Honestly, it had
                       potential but if it worked properly, I probably would be somewhere else right now.`,
-        tools: ['python', 'excel']
+        tools: ['python', 'excel'],
+        github: 'https://github.com/syedwajihrizvi/jaywatch'
     },
     {
         title: 'ACC Controller for Cadillac Lyriq',
         description: `Part of of my University's Alternate Vehicle team. I was tasked by Cadillac itself to program
                       an ACC algorthim they could utilize on the brand new 2024 Cadillac Lyriq. ACC stands for Adaptive
                       Cruise Control and the purpose was to build a rudimentaly algorithm that covered the basic test endpoints.`,
-        tools: ['python']
+        tools: ['python'],
+        github: 'https://github.com/syedwajihrizvi/lyriq_acc'
     },
     {
         title: 'Renty',
         description: `When I was first attempting to expand my full stack knowledge, I built this application using
                       React 16, Express, and MongoDB. Its relatively simple and provides a user interface for managing a movie
                       rental company.`,
-        tools: ['javascript', 'mongodb', 'html']
+        tools: ['javascript', 'mongodb', 'html'],
+        github: 'https://github.com/syedwajihrizvi/renty'
     },
     {
         title: 'Autonomous Banana Peeling Robot',
@@ -166,7 +169,10 @@ function Projects() {
                         </AccordionSummary>
                         <AccordionDetails sx={{display: 'flex', flexDirection: 'column'}}>
                             {project.description}
-                            <GitHubIcon className="icon" sx={{color: 'white'}}/>
+                            {project.github && 
+                            <Link href={project.github} color='inherit' target="_blank" rel="noopener noreferrer">
+                                <GitHubIcon className="icon" sx={{color: 'white'}}/>
+                            </Link>}
                         </AccordionDetails>
                     </Accordion>
                 )}

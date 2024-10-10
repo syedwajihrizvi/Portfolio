@@ -10,7 +10,7 @@ export interface Project {
     usage: Usage[],
     image: string,
     github: string,
-    viewProject: string,
+    viewProject?: string,
     iframe?: boolean,
     videos?: string[]
 }
@@ -18,5 +18,6 @@ export interface Project {
 export interface MinorProjects {
     title: string,
     description: string,
-    tools: string[]
+    tools: string[],
+    github?: string
 }

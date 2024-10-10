@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid"
 import Box from "@mui/material/Box"
 import Button from "@mui/material/Button"
 import { Project as ProjectType } from "../../interfaces/Project"
-import { List, ListItem, Divider, ListItemText, ListItemIcon } from "@mui/material"
+import { List, ListItem, Divider, ListItemText, ListItemIcon, Link } from "@mui/material"
 import Typography from "@mui/material/Typography"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -123,8 +123,18 @@ function Project({information}: Props) {
                             {!viewProjectInfo && projectUsage()}
                         </Box>
                         <Box className="button-group--horizontal project__buttons">
-                            <Button className='button button--primary' startIcon={<LaunchIcon/>}>Vist {information.title}</Button>
-                            <Button className='button button--git' startIcon={<GitHubIcon/>}>Source Code</Button>
+                        {information.viewProject &&
+                        <Link href={information.viewProject} color='inherit' target="_blank" rel="noopener noreferrer">
+                            <Button className='button button--primary' startIcon={<LaunchIcon/>}>
+                            Vist {information.title}
+                            </Button>
+                        </Link>
+                        }
+                        <Link href={information.github} color='inherit' target="_blank" rel="noopener noreferrer">
+                            <Button className='button button--git' startIcon={<GitHubIcon/>}>
+                            Source Code
+                            </Button>
+                        </Link>
                             <Button className='button button--info' startIcon={viewProjectInfo ? <SummarizeIcon/>:<InfoIcon/>} onClick={handleInfoButtonSelect}>
                                 {!viewProjectInfo && "View Info"}
                                 {viewProjectInfo && "Overview"}
