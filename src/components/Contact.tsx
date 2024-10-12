@@ -38,8 +38,9 @@ function Contact() {
     }
 
     return (
-        <MotionPaper 
-        elevation={8} sx={{width: '550px', margin: '0 auto', display: 'flex', flexDirection: 'column' , alignItems: 'center', padding: '0.5rem'}}
+        <MotionPaper
+        className="contact"
+        elevation={8}
         initial={{y: 1500, opacity: 0}}
         animate={{y: 0, opacity: 1}}
         transition={{duration: 0.8, type: 'spring'}}>

@@ -40,7 +40,7 @@
         "sidebar footer";
     height: 100vh;
     width: 100vw;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .sidebar {
@@ -67,7 +67,7 @@
     .main-grid {
         display: grid;
         grid-template-rows: 0.1fr auto auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100vw;
         grid-template-areas: 
             "sidebar"
             "main"
@@ -172,7 +172,7 @@
 
 .flex-footer {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     align-items: center;
     justify-content: space-between;
@@ -421,7 +421,7 @@
 }
 
 .project__info__text {
-    line-height: 1.2rem;
+    line-height: 1rem;
     letter-spacing: 0.1rem;
     font-size: 1rem;
 }
@@ -455,9 +455,26 @@
     width: 80%;
     margin: 1rem auto;
 }
+
 @media screen and (max-width:900px) {
 
     .project__desc, .project__info, .project__usage {
         margin-top: 0;
+    }
+}
+
+.contact {
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width:900px) {
+
+    .contact {
+        width: 100%
     }
 }
