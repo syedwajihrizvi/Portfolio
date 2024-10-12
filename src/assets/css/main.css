@@ -59,6 +59,7 @@ html, body, #root {
     overflow: scroll;
     justify-items: center;
     align-content: center;
+    scrollbar-width: none;
 }
 
 .main::-webkit-scrollbar {
@@ -404,6 +405,7 @@ html, body, #root {
 .project {
     max-width: 1080px;
     overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .project::-webkit-scrollbar {
