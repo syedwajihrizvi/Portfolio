@@ -2,6 +2,9 @@ import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"
 import WorkCard from "./WorkCard"
 import { workInformation } from "./WorkCard"
+import { motion } from 'framer-motion'
+
+const MotionBox = motion(Box)
 
 const companies:workInformation[] = [
     {
@@ -96,9 +99,13 @@ const companies:workInformation[] = [
 function Work() {
     return (
         <Container className="container">
-            <Box className="work">
+            <MotionBox 
+            initial={{y: 1500, opacity: 0}}
+            animate={{y: 0, opacity: 1}}
+            transition={{duration: 0.8, type: 'spring'}}
+            className="work">
                 {companies.map(workInfo => <WorkCard information={workInfo}/>)}
-            </Box>
+            </MotionBox>
         </Container>
     )
 }

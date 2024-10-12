@@ -5,11 +5,14 @@ import { List, ListItem, ListItemText, ListItemIcon, Paper } from "@mui/material
 import { SiTypescript, SiPython, SiJavascript, SiHtml5, SiMongodb } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr"
+import { motion } from 'framer-motion'
 import waterlooLogo from "../../assets/images/about/uni.png"
+
+const MotionBox = motion(Box)
 
 function About() {
     const renderPaper = (skill: string) => {
-        return <Paper elevation={8} sx={{padding: '1.8rem', color: '#03fc98'}}>
+        return <Paper className="skill-paper" elevation={8} sx={{padding: '1.8rem', color: '#03fc98'}}>
             {skill}
         </Paper>
     }
@@ -99,7 +102,11 @@ function About() {
                             </ListItem>                
                         </List>
                     </Box>
-                    <Box sx={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '1rem'}}>
+                    <MotionBox
+                    initial={{opacity:0, y:1500}}
+                    animate={{opacity:1, y: 0}}
+                    transition={{duration: 0.8, type: 'spring'}}
+                    sx={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '1rem'}}>
                         {renderPaper("React")}
                         {renderPaper("Node")}
                         {renderPaper("Django")}
@@ -121,11 +128,14 @@ function About() {
                         {renderPaper("Postman")}
                         {renderPaper("CPython")}
                         {renderPaper("Selenium")}
-                    </Box>
+                    </MotionBox>
                 </Box>
             </Grid>
             <Grid item xs={6}>
-                <Box className="about__description">
+                <MotionBox 
+                initial={{opacity:0, x: 1500}} 
+                animate={{opacity: 1, x: 0}} 
+                transition={{duration: 0.8, type: 'spring'}} className="about__description">
                     <Typography variant='h6' gutterBottom>
                         Back in 2018, I began programming due to the creative liberty and the idea of being able
                         to create something from scratch that can used by millions. Jump to today, I now have worked for
@@ -154,7 +164,7 @@ function About() {
                             <Typography variant="h6">Mechanical Engineering and Computer Science</Typography>
                         </Box>
                     </Box>
-                </Box>
+                </MotionBox>
             </Grid>
         </Grid>
     )

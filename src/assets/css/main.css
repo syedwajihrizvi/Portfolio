@@ -267,11 +267,13 @@
 
 .sidebar-button-active {
     background-color: var(--primary-color);
+    color: black;
 }
 
 .sidebar-button:hover {
     background-color: var(--primary-color);
     cursor: pointer;
+    color: black;
 }
 
 .sidebar-button::selection {
@@ -363,6 +365,15 @@
 
 .skills {
     display: flex;
+}
+
+.skill-paper {
+    transition: all 0.2s;
+}
+
+.skill-paper:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* List */

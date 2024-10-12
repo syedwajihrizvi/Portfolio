@@ -5,6 +5,10 @@ import { z } from 'zod'
 import { Box, Button, Paper, TextField, Typography } from "@mui/material"
 import { ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import { motion } from 'framer-motion'
+
+const MotionPaper = motion(Paper)
+
 const emailSchema = z.object({
     firstName: z.string().min(2, {message: "Must be 2 characters or more."}).max(255, {message: "Must be less than 255 characters"}),
     lastName: z.string().min(2, {message: "Must be 2 characters or more."}).max(255, {message: "Must be less than 255 characters"}),
@@ -34,7 +38,11 @@ function Contact() {
     }
 
     return (
-        <Paper elevation={8} sx={{width: '550px', margin: '0 auto', display: 'flex', flexDirection: 'column' , alignItems: 'center', padding: '0.5rem'}}>
+        <MotionPaper 
+        elevation={8} sx={{width: '550px', margin: '0 auto', display: 'flex', flexDirection: 'column' , alignItems: 'center', padding: '0.5rem'}}
+        initial={{y: 1500, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.8, type: 'spring'}}>
             <Typography variant="h3" sx={{width: '100%', textAlign: 'center'}}>Send me a Message!</Typography>
             <Box sx={{width: '100%', display: 'flex', gap: '3rem', justifyContent: 'space-between'}}>
                 <TextField {...register('firstName')} sx={{width: '100%'}} id="first-name" label="First Name" color="success"/>
@@ -56,7 +64,7 @@ function Contact() {
             </Box>
             <Button className="button button--primary" onClick={handleSubmit(sendEmail)}>Send Email</Button>
             <ToastContainer position='top-left' autoClose={3000}/>
-        </Paper>
+        </MotionPaper>
     )
 }
 
