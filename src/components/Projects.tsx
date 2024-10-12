@@ -39,8 +39,8 @@ const projects: Array<ProjectType> = [
             }
         ],
         image: gamegrid,
-        github: 'url',
-        viewProject: 'url'
+        github: 'https://github.com/syedwajihrizvi/GameCom',
+        viewProject: 'https://syed-rizvi-gamecom.netlify.app/'
     },
     {
         description: `An application that allows you to explore the various points of interests in any city around
@@ -67,7 +67,7 @@ const projects: Array<ProjectType> = [
             }
         ],
         image: cscape,
-        github: 'url',
+        github: 'https://github.com/syedwajihrizvi/CScape',
         viewProject: 'url'
     },
     {
