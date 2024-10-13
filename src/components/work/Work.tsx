@@ -44,16 +44,13 @@ const companies:workInformation[] = [
         skills: ["Python", "Automation", "Functional Testing", "Git", "Selenium",
                  "Integration Testing", "Hardware Testing", "TestRails", "Slash", "TestRails"],
         detailedPoints: [
-            "Maintained 100% rainy day coverage across all testing requirements.",
-            "Provided code coverage over 90% on all product code.",
-            "Provided 95% branch coverage on all product code.",
-            "Ensure each development requirement had atleast 3 Rainy Days and 1 Happy Path test case.",
-            "Reduced code duplication to under 2% across all managed repositories using SonarQube.",
-            "Refactored code to reducde cognitive complexity via analysis of SonarQube",
-            "Developed hundreds of test cases every software cycle using Python and Slash Testing Framework.",
-            "Worked closely with Developers to identify Priority bugs and fix them accordingly.",
-            "Analyzed logs using VIM and several useful Linux commands.",
-            "Configured automation pipelines using Jenkins to run test suits for functional, integration, and hardware tests"
+            "Developed test cases that covered various Bluetooth protocols using Python’s Slash Testing Framework.",
+            "Programmed unit tests in Python to mock several API calls and ensure a minimum 90% code coverage.",
+            "Optimized Jenkin nodes to improve Sanity run time by nearly 28%.",
+            "Developed APIs and CLI tools that provide several text analysis methods for log files.",
+            "Debugged automation scripts through log files, breakpoints, and GUI inspection.",
+            "Utilized Appium to conduct automation tests and analyze android applications.",
+            "Performed version management using Git Bash and contributed to company’s Continuous Integration Pipelines."
         ]
     },
     {

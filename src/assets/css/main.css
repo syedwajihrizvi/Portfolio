@@ -2,7 +2,7 @@ html, body, #root {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto
   }
 
 /* Common Variables */
@@ -440,7 +440,7 @@ html, body, #root {
 }
 
 .project__desc__data {
-    overflow-y: hidden;
+    overflow: auto;
 }
 
 .project .project__img img {
