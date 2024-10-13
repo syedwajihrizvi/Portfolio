@@ -2,7 +2,8 @@ html, body, #root {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: auto
+    overflow: auto;
+    overflow-y: hidden;
   }
 
 /* Common Variables */
@@ -430,7 +431,7 @@ html, body, #root {
 }
 
 .project__info__text {
-    line-height: 1.2rem;
+    line-height: 1rem;
     letter-spacing: 0.1rem;
     font-size: 1rem;
 }
@@ -440,8 +441,10 @@ html, body, #root {
 }
 
 .project__desc__data {
-    overflow: auto;
+    overflow:scroll;
+    scrollbar-width: none;
 }
+
 
 .project .project__img img {
     width: 100%;
