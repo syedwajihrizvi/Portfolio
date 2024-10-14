@@ -67,9 +67,9 @@ function Project({information}: Props) {
         return <Box sx={{height: '250px', width: '100%', display: 'flex', flexDirection: 'row'}}>
                     {information?.videos?.map(video => 
                     <video
-                    controls
+                    playsInline 
                     muted autoPlay loop src={video}
-                    style={{ pointerEvents: 'none', width: '100%', height: '100%' }}
+                    style={{ width: '100%', height: '100%' }}
                     ></video>)}
               </Box>
     }
