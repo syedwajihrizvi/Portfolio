@@ -8,7 +8,7 @@ import { GrMysql } from "react-icons/gr"
 import { motion } from 'framer-motion'
 import waterlooLogo from "../../assets/images/about/uni.png"
 
-const MotionBox = motion(Box)
+const MotionBox = motion(Box as any)
 
 function About() {
     const renderPaper = (skill: string) => {
@@ -146,7 +146,7 @@ function About() {
                         My primary focus these days is to build an automation framework to test the cloud capabilities of Ford's next
                         generation vehicles. I serve as the test lead for several components and ensure the product is delivered to the market
                         with the upmost perfection. In my spare time, I like to focus on building Full Stack applications for the web using 
-                        popular libraries and frameworks such as React and Express.
+                        popular libraries and frameworks such as React, Express, and Django.
                     </Typography>
                     <Typography variant='h6' gutterBottom>
                         When I'm not coding away, I enjoy several different hobbies such as horse riding, video games, playing football,

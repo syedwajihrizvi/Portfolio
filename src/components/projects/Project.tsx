@@ -14,7 +14,7 @@ import { motion } from 'framer-motion'
 import { useState } from "react"
 import { renderIcon } from "../../utils/icons"
 
-const MotionBox = motion(Box)
+const MotionBox = motion(Box as any)
 
 type infoButton = {
     info: boolean,

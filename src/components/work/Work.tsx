@@ -4,7 +4,7 @@ import WorkCard from "./WorkCard"
 import { workInformation } from "./WorkCard"
 import { motion } from 'framer-motion'
 
-const MotionBox = motion(Box)
+const MotionBox = motion(Box as any)
 
 const companies:workInformation[] = [
     {

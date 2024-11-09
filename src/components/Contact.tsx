@@ -7,7 +7,7 @@ import { ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion'
 
-const MotionPaper = motion(Paper)
+const MotionPaper = motion(Paper as any)
 
 const emailSchema = z.object({
     firstName: z.string().min(2, {message: "Must be 2 characters or more."}).max(255, {message: "Must be less than 255 characters"}),
