@@ -123,6 +123,7 @@ html, body, #root {
     justify-items: center;
     align-items: stretch;
     row-gap: 1rem;
+    padding: 2rem 0
 }
 
 .work-card {
@@ -167,7 +168,6 @@ html, body, #root {
 
 @media screen and (max-width: 800px) {
     .work {
-        padding: 20px 0;
         grid-template-columns: 1fr;
         gap: 30px;
     }
