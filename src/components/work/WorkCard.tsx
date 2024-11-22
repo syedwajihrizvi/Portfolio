@@ -25,7 +25,7 @@ function WorkCard({information}: Props) {
 
     const renderViewLess = () => {
         return <>
-                <CardContent>
+                <CardContent sx={{padding: '0rem 1rem'}}>
                     <Typography className='work-card__description'>
                     {information.description}
                     </Typography>

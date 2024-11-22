@@ -36,26 +36,26 @@ function Project({information}: Props) {
 
     const handleInitialProjectInfoAnimationState = () => {
         if (infoButton.info)
-            return {y:-1500}
-        return {y: 0}
+            return {y:-1500, opacity: 0}
+        return {y: 0, opacity: 1}
     }
 
     const handleFinalProjectInfoAnimationState = () => {
         if (infoButton.info)
-            return {y: 0}
-        return {y: -1500}
+            return {y: 0, opacity: 1}
+        return {y: -1500, opacity: 0}
     }
 
     const handleInitialProjectUsageAnimationState = () => {
         if (infoButton.usage)
-            return {y:1500}
-        return {y: 0}
+            return {y:1500, opacity: 0}
+        return {y: 0, opacity: 1}
     }
 
     const handleFinalProjectUsageAnimationState = () => {
         if (infoButton.usage)
-            return {y:0}
-        return {y: 1500}
+            return {y:0, opacity: 1}
+        return {y: 1500, opacity: 0}
     }
 
     const handleAnimationStateComplete = () => {
@@ -64,7 +64,7 @@ function Project({information}: Props) {
     }
 
     const renderVideos = () => {
-        return <Box sx={{height: '250px', width: '100%', display: 'flex', flexDirection: 'row'}}>
+        return <Box className='project__videos'>
                     {information?.videos?.map(video => 
                     <video
                     playsInline 
@@ -122,20 +122,21 @@ function Project({information}: Props) {
                             {viewProjectInfo && projectInfo()}
                             {!viewProjectInfo && projectUsage()}
                         </Box>
-                        <Box className="button-group--horizontal project__buttons">
+                        <Box className="project__buttons">
                         {information.viewProject &&
                         <Link href={information.viewProject} color='inherit' target="_blank" rel="noopener noreferrer">
-                            <Button className='button button--primary' startIcon={<LaunchIcon/>}>
+                            <Button className='project__button button--primary' startIcon={<LaunchIcon/>}>
                             Vist {information.title}
                             </Button>
                         </Link>
                         }
-                        <Link href={information.github} color='inherit' target="_blank" rel="noopener noreferrer">
-                            <Button className='button button--git' startIcon={<GitHubIcon/>}>
+                        <Link href={information.github} color='inherit' 
+                              target="_blank" rel="noopener noreferrer">
+                            <Button className='project__button button--git' startIcon={<GitHubIcon/>}>
                             Source Code
                             </Button>
                         </Link>
-                            <Button className='button button--info' startIcon={viewProjectInfo ? <SummarizeIcon/>:<InfoIcon/>} onClick={handleInfoButtonSelect}>
+                            <Button className='project__button button--info' startIcon={viewProjectInfo ? <SummarizeIcon/>:<InfoIcon/>} onClick={handleInfoButtonSelect}>
                                 {!viewProjectInfo && "View Info"}
                                 {viewProjectInfo && "Overview"}
                             </Button>
