@@ -570,9 +570,14 @@ html, body, #root {
 .more-projects {
     padding: 1rem;
     max-width: 1024px;
+    font-size: 1.2rem;
     margin: 0 auto;
 }
 
+.more-projects__heading {
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+}
 @media screen and (max-width: 768px) {
     .project__buttons {
         gap: 0.3rem;
@@ -585,6 +590,10 @@ html, body, #root {
 
     .project__videos {
         height: 150px;
+    }
+
+    .more-projects__heading {
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width:900px) {

@@ -2,6 +2,8 @@ import Box from "@mui/material/Box"
 import Project from "./projects/Project"
 import gamegrid from "../assets/images/projects/gamecom/gamegrid.webp"
 import cscape from "../assets/images/projects/cscape/cscape.webp"
+import airbnb from "../assets/images/projects/airbnb/airbnb.webp"
+
 import paintVideoOne from "../assets/videos/paint1.mp4"
 import paintVideoTwo from "../assets/videos/paint2.mp4"
 import paintVideoThree from "../assets/videos/paint3.mp4"
@@ -98,6 +100,35 @@ const projects: Array<ProjectType> = [
         videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
         image: cscape,
         github: 'url'
+    },
+    {
+        description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.
+                     I'm a huge fan of the look and feel of the Airbnb brand. I decided to make my own landing page for
+                     the company. It sort of a parady.`,
+        title: 'Airbnb-Parody',
+        usage: [
+            {
+                title: 'HTML',
+                description: `Utilized knowledge of grids, flex, and other semantic elements to 
+                                generate a responsive layout which works great on all devices.`,
+                icon: "html"
+            },
+            {
+                title: 'CSS',
+                description: 'Added several hover effects, gradients, and box-shadows to provide great visual feedback',
+                icon: "css"
+            },
+            {
+                title: 'Javascript',
+                description: `Implemented vanilla javascript for various functionalities such as auto-scroll, 
+                             progress bars, and dynamic footers and navbars.`,
+                icon: "javascript"
+            }
+        ],
+        image: airbnb,
+        github: 'https://github.com/syedwajihrizvi/GameCom',
+        viewProject: 'https://syed-rizvi-gamecom.netlify.app/'
+
     }
 ]
 
@@ -158,7 +189,7 @@ function Projects() {
             {projects.map(project => 
                 <Project information={project}/>)}
             <Box className="more-projects">
-                <Typography variant="h4" sx={{textAlign: 'center'}}>More of my Projects over the years</Typography>
+                <Typography variant="h4" sx={{textAlign: 'center'}} className="more-projects__heading">More of my Projects over the years</Typography>
                 {moreProjects.map(project => 
                     <Accordion disableGutters sx={{ margin: 0 }}>
                         <AccordionSummary

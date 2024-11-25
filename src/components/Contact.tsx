@@ -44,7 +44,7 @@ function Contact() {
         initial={{y: 1500, opacity: 0}}
         animate={{y: 0, opacity: 1}}
         transition={{duration: 0.8, type: 'spring'}}>
-            <Typography variant="h3" sx={{width: '100%', textAlign: 'center'}}>Send me a Message!</Typography>
+            <Typography variant="h3" sx={{width: '100%', textAlign: 'center', fontSize: '1.8rem', marginBottom: '1rem'}}>Send me a Message!</Typography>
             <Box sx={{width: '100%', display: 'flex', gap: '3rem', justifyContent: 'space-between'}}>
                 <TextField {...register('firstName')} sx={{width: '100%'}} id="first-name" label="First Name" color="success"/>
                 <TextField {...register('lastName')} sx={{width: '100%'}} id="last-name" label="Last Name" color="success"/>
