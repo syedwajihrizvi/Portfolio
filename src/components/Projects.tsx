@@ -126,8 +126,8 @@ const projects: Array<ProjectType> = [
             }
         ],
         image: airbnb,
-        github: 'https://github.com/syedwajihrizvi/GameCom',
-        viewProject: 'https://syed-rizvi-gamecom.netlify.app/'
+        github: 'https://github.com/syedwajihrizvi/Airbnb',
+        viewProject: 'https://syed-rizvi-air-bnb-parody.netlify.app'
 
     }
 ]
