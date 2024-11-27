@@ -99,7 +99,7 @@ function Work() {
             <MotionBox 
             initial={{y: 1500, opacity: 0}}
             animate={{y: 0, opacity: 1}}
-            transition={{duration: 0.8, type: 'spring'}}
+            transition={{duration: 1, type: 'spring'}}
             className="work">
                 {companies.map(workInfo => <WorkCard information={workInfo}/>)}
             </MotionBox>
