@@ -2,8 +2,8 @@ html, body, #root {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: auto;
-    overflow-y: hidden;
+    position: relative;
+    overflow: hidden
   }
 
 /* Common Variables */
@@ -76,7 +76,7 @@ html, body, #root {
 @media screen and (max-width: 1024px) {
     .main-grid {
         display: grid;
-        grid-template-rows: 0.1fr auto auto;
+        grid-template-rows: 0.1fr 0.9fr auto;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "sidebar"
@@ -606,8 +606,6 @@ html, body, #root {
     max-width: 550px;
     text-align: center;
     padding: 1rem;
-    position: relative;
-    top: 10%
 }
 
 @media screen and (max-width: 800px) {

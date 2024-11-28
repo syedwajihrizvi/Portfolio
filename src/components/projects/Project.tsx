@@ -36,26 +36,26 @@ function Project({information}: Props) {
 
     const handleInitialProjectInfoAnimationState = () => {
         if (infoButton.info)
-            return {y:-1500, opacity: 0}
-        return {y: 0, opacity: 1}
+            return {opacity: 0}
+        return {opacity: 1}
     }
 
     const handleFinalProjectInfoAnimationState = () => {
         if (infoButton.info)
-            return {y: 0, opacity: 1}
-        return {y: -1500, opacity: 0}
+            return {opacity: 1}
+        return {opacity: 0}
     }
 
     const handleInitialProjectUsageAnimationState = () => {
         if (infoButton.usage)
-            return {y:1500, opacity: 0}
-        return {y: 0, opacity: 1}
+            return {opacity: 0}
+        return {opacity: 1}
     }
 
     const handleFinalProjectUsageAnimationState = () => {
         if (infoButton.usage)
-            return {y:0, opacity: 1}
-        return {y: 1500, opacity: 0}
+            return {opacity: 1}
+        return {opacity: 0}
     }
 
     const handleAnimationStateComplete = () => {
