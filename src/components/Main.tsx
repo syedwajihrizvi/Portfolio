@@ -35,7 +35,9 @@ function Main() {
 
     return (
         <ThemeProvider theme={darkTheme}>
-            <div className='mouse-spotlight'></div>
+            <div className="mouse-spotlight-container">
+                <div className='mouse-spotlight'></div>
+            </div>
             <CssBaseline>
                 <Box className="main-grid">
                     <Box className="sidebar">
