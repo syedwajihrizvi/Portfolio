@@ -121,7 +121,10 @@ function About() {
                         {renderPaper("Django")}
                         {renderPaper("Slash Testing")}
                         {renderPaper("Bootstrap")}
+                        {renderPaper("Tailwind")}
                         {renderPaper("Express")}
+                        {renderPaper("GSAP")}
+                        {renderPaper("ThreeJS")}
                         {renderPaper("MaterialUI")}
                         {renderPaper("ChakraUI")}
                         {renderPaper("Jest Testing")}
