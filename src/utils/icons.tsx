@@ -1,7 +1,8 @@
 import { SiTypescript, SiJavascript, 
         SiMongodb, SiPython, SiLinux, SiMicrosoftexcel, 
-        SiSwift, SiXcode, SiHtml5, SiArduino, SiAutocad  } from "react-icons/si"
+        SiSwift, SiXcode, SiHtml5, SiArduino, SiAutocad, SiTailwindcss  } from "react-icons/si"
 import { IoLogoCss3 } from "react-icons/io";
+import { TbBrandThreejs } from "react-icons/tb";
 
 export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
     if (icon == "typescript")
@@ -10,6 +11,10 @@ export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
         return <SiJavascript color="#03fc98" fontSize={fontSize}/>
     if (icon == "html")
         return <SiHtml5 color="#03fc98" fontSize={fontSize}/>
+    if (icon == "threeJS")
+        return <TbBrandThreejs color="#03fc98" fontSize={fontSize}/>
+    if (icon == "tailwind")
+        return <SiTailwindcss color="#03fc98" fontSize={fontSize}/>
     if (icon == "css")
         return <IoLogoCss3 color="#03fc98" fontSize={fontSize}/>
     if (icon == "mongodb")

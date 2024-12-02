@@ -3,6 +3,7 @@ import Project from "./projects/Project"
 import gamegrid from "../assets/images/projects/gamecom/gamegrid.webp"
 import cscape from "../assets/images/projects/cscape/cscape.webp"
 import airbnb from "../assets/images/projects/airbnb/airbnb.webp"
+import iphone15 from "../assets/images/projects/apple/iPhone15.png"
 
 import paintVideoOne from "../assets/videos/paint1.mp4"
 import paintVideoTwo from "../assets/videos/paint2.mp4"
@@ -43,6 +44,32 @@ const projects: Array<ProjectType> = [
         image: gamegrid,
         github: 'https://github.com/syedwajihrizvi/GameCom',
         viewProject: 'https://syed-rizvi-gamecom.netlify.app/'
+    },
+    {
+        description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
+                      It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
+                      Furthermore the website includes 3D Models of the iPhone 15 as well.`,
+        title: 'iPhone 15',
+        usage: [
+            {
+                title: 'Javascript',
+                description: `Developed front end with ReactJS and vanilla javascript for animations.`,
+                icon: "javascript"
+            },
+            {
+                title: 'ThreeJS',
+                description: 'Beautiful 3D Rendering of various iPhone 15 Models.',
+                icon: "threeJS"
+            },
+            {
+                title: 'Tailwind',
+                description: 'Develop reusable classes and beautiful styling.',
+                icon: "tailwind"
+            }
+        ],
+        image: iphone15,
+        github: 'https://github.com/syedwajihrizvi/iPhone15',
+        viewProject: 'https://syed-rizvi-iphone-15.netlify.app/'
     },
     {
         description: `An application that allows you to explore the various points of interests in any city around
