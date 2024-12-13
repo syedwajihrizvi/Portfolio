@@ -24,7 +24,6 @@ function Footer() {
                 color="inherit" target="_blank" rel="noopener noreferrer">
                     <Button className='button button--primary'>Resume</Button>
                 </Link>
-                <Button className='button button--primary' onClick={() => navigate('/contact')}>Get In Touch</Button>
             </Box>
         </Box>
     )
