@@ -3,7 +3,7 @@ html, body, #root {
     margin: 0;
     padding: 0;
     position: relative;
-    overflow: hidden;
+    overflow: hidden
   }
 
 /* Common Variables */
@@ -71,7 +71,6 @@ html, body, #root {
 .footer {
     margin-top: 1rem;
     grid-area: footer;
-    overflow: scroll;
 }
 
 @media screen and (max-width: 1024px) {
@@ -213,21 +212,9 @@ html, body, #root {
         padding-right: 5%;
         align-items: center;
         border-top: 1px solid white;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-bottom: 0;
-    }   
-
-    .footer {
-        padding-top: 0;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
-    }
-    /* Chrome, Edge, Safari */
-    .footer::-webkit-scrollbar {
-        background-color: transparent;
-        width: 0;
-    }
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }    
 }
 
 /* Buttons */
@@ -501,7 +488,7 @@ html, body, #root {
 /* Projects */
 
 .projects {
-    padding: 0.5rem;
+    padding: 0.5rem
 }
 
 .project {
