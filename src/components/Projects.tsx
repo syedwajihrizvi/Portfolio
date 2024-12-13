@@ -3,7 +3,8 @@ import Project from "./projects/Project"
 import gamegrid from "../assets/images/projects/gamecom/gamegrid.webp"
 import cscape from "../assets/images/projects/cscape/cscape.webp"
 import airbnb from "../assets/images/projects/airbnb/airbnb.webp"
-import iphone15 from "../assets/images/projects/apple/iPhone15.png"
+import iPhone15 from "../assets/images/projects/apple/iPhone15.png"
+import iPhone16 from "../assets/images/projects/apple/iPhone16.webp"
 
 import paintVideoOne from "../assets/videos/paint1.mp4"
 import paintVideoTwo from "../assets/videos/paint2.mp4"
@@ -46,9 +47,38 @@ const projects: Array<ProjectType> = [
         viewProject: 'https://syed-rizvi-gamecom.netlify.app/'
     },
     {
+        description: `An Apple inspired website for the iPhone 16 and iPhone 16 Pro. Contains interactive 3D
+                      Models along with highlights of several features. 3D Models were built with
+                      ThreeJS and animations done with GSAP. It includes 3D Models for the iPhone 16 as
+                      well as the iPhone 16 Pro. You can change the size as well as the colors of the models.
+                      The website should be viewable on mobile, tablets, laptops, and desktops.`,
+        title: 'iPhone 16',
+        usage: [
+            {
+                title: 'Typescript',
+                description: 'Building reusable components.',
+                icon: "typescript"
+            },
+            {
+                title: 'Javascript',
+                description: `Vanilla JS for useEffect animations`,
+                icon: "javascript"
+            },
+            {
+                title: 'ThreeJS',
+                description: 'Beautiful 3D Rendering of various iPhone 15 Models.',
+                icon: "threeJS"
+            }
+        ],
+        image: iPhone16,
+        github: 'https://github.com/syedwajihrizvi/iPhone16',
+        viewProject: 'https://syed-rizvi-iphone-16.netlify.app/'
+    },
+    {
         description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
                       It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
-                      Furthermore the website includes 3D Models of the iPhone 15 as well.`,
+                      Furthermore the website includes 3D Models of the iPhone 15 as well. The model can be interacted with,
+                      the size can be changed, and the color can be changed as well.`,
         title: 'iPhone 15',
         usage: [
             {
@@ -67,7 +97,7 @@ const projects: Array<ProjectType> = [
                 icon: "tailwind"
             }
         ],
-        image: iphone15,
+        image: iPhone15,
         github: 'https://github.com/syedwajihrizvi/iPhone15',
         viewProject: 'https://syed-rizvi-iphone-15.netlify.app/'
     },
