@@ -3,7 +3,6 @@ html, body, #root {
     margin: 0;
     padding: 0;
     position: relative;
-    overflow: hidden
   }
 
 /* Common Variables */
@@ -215,7 +214,6 @@ html, body, #root {
         border-top: 1px solid white;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-bottom: 5rem;
     }   
 
     .footer {
@@ -500,7 +498,7 @@ html, body, #root {
 /* Projects */
 
 .projects {
-    padding: 0.5rem
+    padding: 0.5rem;
 }
 
 .project {
