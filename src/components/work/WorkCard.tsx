@@ -51,8 +51,7 @@ function WorkCard({information}: Props) {
                 </CardContent>
     }
     return (
-            <Card
-                className='work-card'>
+            <Card className='work-card'>
                 <Box className='work-card__company'>
                     <Typography className='heading-company'>{information.companyName}</Typography>
                     <Typography className='heading-position'>{information.position}</Typography>

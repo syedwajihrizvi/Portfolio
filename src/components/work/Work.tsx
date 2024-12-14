@@ -2,9 +2,9 @@ import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"
 import WorkCard from "./WorkCard"
 import { workInformation } from "./WorkCard"
-import { motion } from 'framer-motion'
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
 
-const MotionBox = motion(Box as any)
 
 const companies:workInformation[] = [
     {
@@ -94,15 +94,20 @@ const companies:workInformation[] = [
 ]
 
 function Work() {
+    useGSAP(() => {
+        gsap.to('.work-card', {
+            opacity: 1,
+            duration: 1,
+            top: 0,
+            stagger: 0.1
+        })
+    }, [])
+
     return (
         <Container className="container">
-            <MotionBox 
-            initial={{y: 1500, opacity: 0}}
-            animate={{y: 0, opacity: 1}}
-            transition={{duration: 1, type: 'spring'}}
-            className="work">
+            <Box className="work">
                 {companies.map(workInfo => <WorkCard information={workInfo}/>)}
-            </MotionBox>
+            </Box>
         </Container>
     )
 }

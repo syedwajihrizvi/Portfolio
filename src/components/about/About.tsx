@@ -7,15 +7,50 @@ import { FaGithub } from "react-icons/fa6";
 import { PiFileSqlFill } from "react-icons/pi";
 import { motion } from 'framer-motion'
 import waterlooLogo from "../../assets/images/about/uni.png"
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from "gsap/all";
+import gsap from 'gsap'
 
+gsap.registerPlugin(ScrollTrigger)
 const MotionBox = motion(Box as any)
 
 function About() {
+
     const renderPaper = (skill: string) => {
         return <Paper className="skill-paper" elevation={8}>
             {skill}
         </Paper>
     }
+
+    useGSAP(() => {
+        gsap.to('.skill-paper', {
+            scrollTrigger: {
+                trigger: '.skills-cards',
+                toggleActions: 'play none none reverse'
+            },
+            opacity: 1,
+            top: 0,
+            duration: 0.6,
+            stagger: 0.05
+        })
+
+        gsap.to('.about__text', {
+            scrollTrigger: {
+                trigger: '.about__description',
+                toggleActions: 'play none none reverse'
+            },
+            opacity: 1,
+            left: 0,
+            duration: 1,
+            stagger: 0.2
+        })
+
+        gsap.to('.education-container', {
+            opacity: 1,
+            top: 0,
+            duration: 1
+        })
+    }, [])
 
     return (
         <Grid container className="about" columns={{xs: 4, sm: 8, md: 12}}>
@@ -110,12 +145,7 @@ function About() {
                             </ListItem>                
                         </List>
                     </MotionBox>
-                    <MotionBox
-                    className="skills-cards"
-                    initial={{opacity: 0, y: 20}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 0.6}}
-                    >
+                    <Box className="skills-cards">
                         {renderPaper("React")}
                         {renderPaper("Node")}
                         {renderPaper("Django")}
@@ -140,15 +170,11 @@ function About() {
                         {renderPaper("Postman")}
                         {renderPaper("CPython")}
                         {renderPaper("Selenium")}
-                    </MotionBox>
+                    </Box>
                 </Box>
             </Grid>
             <Grid item xs={6}>
-                <MotionBox 
-                initial={{opacity:0, x: 1500}} 
-                animate={{opacity: 1, x: 0}} 
-                transition={{duration: 0.8, type: 'spring'}} className="about__description"
-                >
+                <Box className="about__description">
                     <Typography className="about__text" variant='h6' gutterBottom>
                         Back in 2018, I began programming due to the creative liberty and the idea of being able
                         to create something from scratch that can used by millions. Jump to today, I now have worked for
@@ -169,7 +195,7 @@ function About() {
                     <Typography className="about__text" variant='h6' gutterBottom>
                         I hope to continue to develop my skills and surround myself with people who bring out the best of me.   
                     </Typography>
-                    <Box sx={{display: 'flex', gap: '1rem'}}>
+                    <Box className="education-container" sx={{display: 'flex', gap: '1rem'}}>
                         <img src={waterlooLogo} alt="University of Waterloo"  width="100px" height="100%"/>
                         <Box className="education">
                             <Typography variant="h4" color="white" fontWeight={800} letterSpacing={1.2}>Education</Typography>
@@ -177,7 +203,7 @@ function About() {
                             <Typography variant="h6" sx={{lineHeight: 1.2}}>Mechanical Engineering and Computer Science</Typography>
                         </Box>
                     </Box>
-                </MotionBox>
+                </Box>
             </Grid>
         </Grid>
     )

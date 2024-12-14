@@ -5,7 +5,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline'
 import "../App.css"
 import "../assets/css/main.css"
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const darkTheme = createTheme({
@@ -15,7 +15,7 @@ const darkTheme = createTheme({
 });
 
 function Main() {
-
+    const location = useLocation()
     useEffect(() => {
         const mouseSpotlight = document.documentElement.querySelector('.mouse-spotlight') as HTMLElement
         document.addEventListener('mousemove', (event) => {
@@ -32,6 +32,14 @@ function Main() {
                 mouseSpotlight.style.opacity = '0'
         })
     })
+
+    useEffect(() => {
+        // Example: Scroll to top on route change
+        const main = document.querySelector('.main')
+        main?.scrollTo(0, 0)
+
+        // You can add other actions here
+    }, [location]); // Dependency array ensures this runs when location changes
 
     return (
         <ThemeProvider theme={darkTheme}>

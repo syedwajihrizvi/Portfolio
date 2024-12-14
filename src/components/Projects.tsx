@@ -14,6 +14,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { MinorProjects, Project as ProjectType } from "../interfaces/Project"
 import { Accordion, AccordionSummary, AccordionDetails, Typography, Link } from "@mui/material"
 import { renderIcon } from "../utils/icons"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
 
 const projects: Array<ProjectType> = [
     {
@@ -241,6 +243,17 @@ const moreProjects: Array<MinorProjects> = [
 ]
 
 function Projects() {
+
+    useGSAP(() => {
+        gsap.to('.project', {
+            opacity: 1,
+            duration: 1,
+            stagger: 0.1,
+            left: 0,
+            ease: 'power2.inOut'
+        })
+    })
+
     return (
         <Box className="projects">
             {projects.map(project => 
