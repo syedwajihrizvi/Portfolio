@@ -12,11 +12,11 @@ const companies:workInformation[] = [
         position: "Lead Software Automation Engineer",
         location: "Kanata, ON",
         yearsWorked: "2023-Present",
-        description: `Was the lead automation tester for several cloud components that were imperative in
+        description: `Lead automation engineer for several cloud components that are imperative in
                       Ford's next generation vehicles. Perform functional testing, integration testing, and hardware
-                      testing to ensure product was delivered with upmost perfection. Out of all of Ford's cloud components,
-                      the components I was the lead of were ranked the highest in terms of testing scores and code coverage across
-                      the Ford Software Team.`,
+                      testing to ensure product is delivered with the upmost perfection. Out of all of Ford's cloud components,
+                      the components I'm the lead of are ranked the highest in terms of testing scores and code coverage across
+                      Ford's FNV4 Software Team.`,
         skills: ["Python", "Automation", "Functional Testing", "Docker", "Jenkins", "Git", 
                  "Integration Testing", "Vim", "Hardware Testing", "Linux", "TestRails", "Slash", "TestRails"],
         detailedPoints: [
@@ -25,11 +25,11 @@ const companies:workInformation[] = [
             "Provided 95% branch coverage on all product code.",
             "Ensure each development requirement had atleast 3 Rainy Days and 1 Happy Path test case.",
             "Reduced code duplication to under 2% across all managed repositories using SonarQube.",
-            "Refactored code to reducde cognitive complexity via analysis of SonarQube",
-            "Developed hundreds of test cases every software cycle using Python and Slash Testing Framework.",
+            "Refactored code to reduce cognitive complexity via analysis of SonarQube",
+            "Developed hundreds of test cases using Python and the Slash Testing Framework.",
             "Worked closely with Developers to identify Priority bugs and fix them accordingly.",
             "Analyzed logs using VIM and several useful Linux commands.",
-            "Configured automation pipelines using Jenkins to run test suits for functional, integration, and hardware tests"
+            "Configured automation pipelines using Jenkins to run test suits for functional, integration, and hardware tests."
         ]
     },
     {
@@ -88,7 +88,7 @@ const companies:workInformation[] = [
             "Optimized analysis time using Excel to properly determine improvement oppurtunites.",
             "Worked with RPA team to develop algorithm to determine cost savings via automation.",
             "Identified process improvements that could save company upward of $500, 000 annually.",
-            "Participated in SCRUM meetings with managers and direcotors to update them on automation."
+            "Participated in SCRUM meetings with managers and directors to update them on automation."
         ]
     }
 ]

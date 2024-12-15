@@ -19,18 +19,18 @@ import gsap from "gsap"
 
 const projects: Array<ProjectType> = [
     {
-        description: `A website that serves thousands of games from the IGDB API. Create your account,
+        description: `A website that serves millions of games from the IGDB API. Create your account,
                 browse any game you want, view game trailers, plots, summaries, and reviews. The front end
                 was made using React and the Chakra UI library. I made the back end using NodeJS, which
                 was paired with a MongoDB database. This was one of the first projects I worked on and
-                it really helped introduce me too many full stack concepts. Make sure to visit the
+                it really helped introduce me to many full stack concepts. Make sure to visit the
                 website and give it a spin. You have to create your account first, but remember NOT to provide
                 real information, this is only a demo website!`,
         title: 'GameCom',
         usage: [
             {
                 title: 'Typescript',
-                description: 'Developed front end with React TS and Chakra UI.',
+                description: 'Developed front end with ReactTS and Chakra UI.',
                 icon: "typescript"
             },
             {
@@ -52,7 +52,7 @@ const projects: Array<ProjectType> = [
         description: `An Apple inspired website for the iPhone 16 and iPhone 16 Pro. Contains interactive 3D
                       Models along with highlights of several features. 3D Models were built with
                       ThreeJS and animations done with GSAP. It includes 3D Models for the iPhone 16 as
-                      well as the iPhone 16 Pro. You can change the size as well as the colors of the models.
+                      well as the iPhone 16 Pro. You can change the size as well as the color of the models.
                       The website should be viewable on mobile, tablets, laptops, and desktops.`,
         title: 'iPhone 16',
         usage: [
@@ -75,33 +75,6 @@ const projects: Array<ProjectType> = [
         image: iPhone16,
         github: 'https://github.com/syedwajihrizvi/iPhone16',
         viewProject: 'https://syed-rizvi-iphone-16.netlify.app/'
-    },
-    {
-        description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
-                      It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
-                      Furthermore the website includes 3D Models of the iPhone 15 as well. The model can be interacted with,
-                      the size can be changed, and the color can be changed as well.`,
-        title: 'iPhone 15',
-        usage: [
-            {
-                title: 'Javascript',
-                description: `Developed front end with ReactJS and vanilla javascript for animations.`,
-                icon: "javascript"
-            },
-            {
-                title: 'ThreeJS',
-                description: 'Beautiful 3D Rendering of various iPhone 15 Models.',
-                icon: "threeJS"
-            },
-            {
-                title: 'Tailwind',
-                description: 'Develop reusable classes and beautiful styling.',
-                icon: "tailwind"
-            }
-        ],
-        image: iPhone15,
-        github: 'https://github.com/syedwajihrizvi/iPhone15',
-        viewProject: 'https://syed-rizvi-iphone-15.netlify.app/'
     },
     {
         description: `An application that allows you to explore the various points of interests in any city around
@@ -132,33 +105,31 @@ const projects: Array<ProjectType> = [
         viewProject: 'url'
     },
     {
-        description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
-                      in an enclosed room. It was built as part of my 4th year univeristy captstone project. The robot would
-                      take in an DXF file which would essentially be a set of coordinates translated from an AutoCAD file. The
-                      algorithm will then determine the best path to navigate the coordinates in the most efficient way possible.
-                      Utilzing its on board LiDar, it uses its localization system to navigate the path in a given room. `,
-        title: 'P.A.I.N.T',
+        description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
+                      It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
+                      Furthermore the website includes 3D Models of the iPhone 15 as well. The model can be interacted with,
+                      the size can be changed, and the color can be changed as well.`,
+        title: 'iPhone 15',
         usage: [
             {
-                title: 'Python',
-                description: `Programmed RasberryPi using Python.`,
-                icon: "python"
+                title: 'Javascript',
+                description: `Developed front end with ReactJS and vanilla javascript for animations.`,
+                icon: "javascript"
             },
             {
-                title: 'Linux',
-                description: 'RasberryPi is Linux based so had to utilize several linux commands.',
-                icon: "linux"
+                title: 'ThreeJS',
+                description: 'Beautiful 3D Rendering of various iPhone 15 Models.',
+                icon: "threeJS"
             },
             {
-                title: 'Excel',
-                description: 'Collecting localization data and testing algorithm accuracy.',
-                icon: "excel"
+                title: 'Tailwind',
+                description: 'Develop reusable classes and beautiful styling.',
+                icon: "tailwind"
             }
         ],
-        iframe: true,
-        videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
-        image: cscape,
-        github: 'url'
+        image: iPhone15,
+        github: 'https://github.com/syedwajihrizvi/iPhone15',
+        viewProject: 'https://syed-rizvi-iphone-15.netlify.app/'
     },
     {
         description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.
@@ -188,6 +159,35 @@ const projects: Array<ProjectType> = [
         github: 'https://github.com/syedwajihrizvi/Airbnb',
         viewProject: 'https://syed-rizvi-air-bnb-parody.netlify.app'
 
+    },
+    {
+        description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
+                      in an enclosed room. It was built as part of my 4th year univeristy captstone project. The robot would
+                      take in an DXF file which would essentially be a set of coordinates translated from an AutoCAD file. The
+                      algorithm will then determine the best path to navigate the coordinates in the most efficient way possible.
+                      Utilzing its on board LiDar, it uses its localization system to navigate the path in a given room. `,
+        title: 'P.A.I.N.T',
+        usage: [
+            {
+                title: 'Python',
+                description: `Programmed RasberryPi using Python.`,
+                icon: "python"
+            },
+            {
+                title: 'Linux',
+                description: 'RasberryPi is Linux based so had to utilize several linux commands.',
+                icon: "linux"
+            },
+            {
+                title: 'Excel',
+                description: 'Collecting localization data and testing algorithm accuracy.',
+                icon: "excel"
+            }
+        ],
+        iframe: true,
+        videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
+        image: cscape,
+        github: 'url'
     }
 ]
 
@@ -213,14 +213,14 @@ const moreProjects: Array<MinorProjects> = [
         title: 'ACC Controller for Cadillac Lyriq',
         description: `Part of of my University's Alternate Vehicle team. I was tasked by Cadillac itself to program
                       an ACC algorthim they could utilize on the brand new 2024 Cadillac Lyriq. ACC stands for Adaptive
-                      Cruise Control and the purpose was to build a rudimentaly algorithm that covered the basic test endpoints.`,
+                      Cruise Control and the purpose was to design an algorithm that covered the basic test endpoints.`,
         tools: ['python'],
         github: 'https://github.com/syedwajihrizvi/lyriq_acc'
     },
     {
         title: ' MPC for Cadillac Lyriq',
         description: `Part of of my University's Alternate Vehicle team. I was tasked by Cadillac itself to program
-                      a Model Predictive Controller which was able to take in data from the surrounding traffic signal
+                      a Model Predictive Controller which was able to take in data from the surrounding traffic signals
                       and determine a vehicle's velocity when approaching an intersection.`,
         tools: ['python'],
         github: 'https://github.com/syedwajihrizvi/lyriq_mpc'
