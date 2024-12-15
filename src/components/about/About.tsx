@@ -36,7 +36,7 @@ function About() {
 
         gsap.to('.about__text', {
             scrollTrigger: {
-                trigger: '.about__description',
+                trigger: '.about',
                 toggleActions: 'play none none reverse'
             },
             opacity: 1,
