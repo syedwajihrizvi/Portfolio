@@ -20,7 +20,7 @@ function Footer() {
                 <MailIcon className="icon" fontSize="large" onClick={() => navigate('/contact')}/>
             </Stack>
             <Box className="button-group">
-                <Link href="https://drive.google.com/file/d/1xBVPxONT9HrlcHeXO_02GrB2B4J7RoZz/view?usp=drive_link"
+                <Link href="https://syedwajihrizvi.com/resume.pdf"
                 color="inherit" target="_blank" rel="noopener noreferrer">
                     <Button className='button button--primary'>Resume</Button>
                 </Link>
