@@ -77,61 +77,6 @@ const projects: Array<ProjectType> = [
         viewProject: 'https://syed-rizvi-iphone-16.netlify.app/'
     },
     {
-        description: `An application that allows you to explore the various points of interests in any city around
-                      the world! View destinations such as cafes, museums, restaurants, amusement parks, and various other
-                      points of interest. Get valuable information such as reviews, opening times, website, and contact info.
-                      Plan out the entire trip in any city and feed all the places you want to visit into the AI powered backend
-                      which willl generate the most effective trip plan for you based on various factors including weather, cost, and time.`,
-        title: 'CScape',
-        usage: [
-            {
-                title: 'Typescript',
-                description: `Developed front end with React TS and Material UI.`,
-                icon: "typescript"
-            },
-            {
-                title: 'Javascript',
-                description: 'Used to build server with Node JS. Utilized mongoose and express to develop compatible API.',
-                icon: "javascript"
-            },
-            {
-                title: 'Python',
-                description: 'Developed alogrithm to calculate most efficient trip plan and implement odometric equations',
-                icon: "python"
-            }
-        ],
-        image: cscape,
-        github: 'https://github.com/syedwajihrizvi/CScape',
-        viewProject: 'url'
-    },
-    {
-        description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
-                      It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
-                      Furthermore the website includes 3D Models of the iPhone 15 as well. The model can be interacted with,
-                      the size can be changed, and the color can be changed as well.`,
-        title: 'iPhone 15',
-        usage: [
-            {
-                title: 'Javascript',
-                description: `Developed front end with ReactJS and vanilla javascript for animations.`,
-                icon: "javascript"
-            },
-            {
-                title: 'ThreeJS',
-                description: 'Beautiful 3D Rendering of various iPhone 15 Models.',
-                icon: "threeJS"
-            },
-            {
-                title: 'Tailwind',
-                description: 'Develop reusable classes and beautiful styling.',
-                icon: "tailwind"
-            }
-        ],
-        image: iPhone15,
-        github: 'https://github.com/syedwajihrizvi/iPhone15',
-        viewProject: 'https://syed-rizvi-iphone-15.netlify.app/'
-    },
-    {
         description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.
                      I'm a huge fan of the look and feel of the Airbnb brand. I decided to make my own landing page for
                      the company. It sort of a parady.`,
@@ -159,6 +104,61 @@ const projects: Array<ProjectType> = [
         github: 'https://github.com/syedwajihrizvi/Airbnb',
         viewProject: 'https://syed-rizvi-air-bnb-parody.netlify.app'
 
+    },
+    {
+        description: `An application that allows you to explore the various points of interests in any city around
+                      the world! View destinations such as cafes, museums, restaurants, amusement parks, and various other
+                      points of interest. Get valuable information such as reviews, opening times, website, and contact info.
+                      Plan out the entire trip in any city and feed all the places you want to visit into the AI powered backend
+                      which willl generate the most effective trip plan for you based on various factors including weather, cost, and time.`,
+        title: 'CScape',
+        usage: [
+            {
+                title: 'Typescript',
+                description: `Developed front end with React TS and Material UI.`,
+                icon: "typescript"
+            },
+            {
+                title: 'Javascript',
+                description: 'Used to build server with Node JS. Utilized mongoose and express to develop compatible API.',
+                icon: "javascript"
+            },
+            {
+                title: 'Python',
+                description: 'Developed alogrithm to calculate most efficient trip plan and implement odometric equations',
+                icon: "python"
+            }
+        ],
+        image: cscape,
+        github: 'https://github.com/syedwajihrizvi/CScape',
+        viewProject: 'https://cscape.netlify.app'
+    },
+    {
+        description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
+                      It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
+                      Furthermore the website includes 3D Models of the iPhone 15 as well. The model can be interacted with,
+                      the size can be changed, and the color can be changed as well.`,
+        title: 'iPhone 15',
+        usage: [
+            {
+                title: 'Javascript',
+                description: `Developed front end with ReactJS and vanilla javascript for animations.`,
+                icon: "javascript"
+            },
+            {
+                title: 'ThreeJS',
+                description: 'Beautiful 3D Rendering of various iPhone 15 Models.',
+                icon: "threeJS"
+            },
+            {
+                title: 'Tailwind',
+                description: 'Develop reusable classes and beautiful styling.',
+                icon: "tailwind"
+            }
+        ],
+        image: iPhone15,
+        github: 'https://github.com/syedwajihrizvi/iPhone15',
+        viewProject: 'https://syed-rizvi-iphone-15.netlify.app/'
     },
     {
         description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
