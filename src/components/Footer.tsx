@@ -12,12 +12,12 @@ function Footer() {
         <Box className="flex-footer">
             <Stack className='contact-icons'>
                 <Link href="https://www.linkedin.com/in/syed-wajih-rizvi" color='inherit' target="_blank" rel="noopener noreferrer">
-                    <LinkedInIcon className="icon" fontSize="large"/>
+                    <LinkedInIcon className="icon"/>
                 </Link>
                 <Link href="https://github.com/syedwajihrizvi" color='inherit' target="_blank" rel="noopener noreferrer">
-                    <GitHubIcon className="icon" fontSize="large"/>
+                    <GitHubIcon className="icon"/>
                 </Link>
-                <MailIcon className="icon" fontSize="large" onClick={() => navigate('/contact')}/>
+                <MailIcon className="icon" onClick={() => navigate('/contact')}/>
             </Stack>
             <Box className="button-group">
                 <Link href="https://syedwajihrizvi.com/resume.pdf"

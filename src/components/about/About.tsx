@@ -24,10 +24,6 @@ function About() {
 
     useGSAP(() => {
         gsap.to('.skill-paper', {
-            scrollTrigger: {
-                trigger: '.skills-cards',
-                toggleActions: 'play none none reverse'
-            },
             opacity: 1,
             top: 0,
             duration: 0.6,
