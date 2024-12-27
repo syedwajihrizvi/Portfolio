@@ -147,7 +147,7 @@ function About() {
                     </MotionBox>
                     <Box className="skills-cards">
                         {renderPaper("React")}
-                        {renderPaper("Node")}
+                        {renderPaper("React-Native")}
                         {renderPaper("Django")}
                         {renderPaper("Slash Testing")}
                         {renderPaper("Bootstrap")}
@@ -157,11 +157,10 @@ function About() {
                         {renderPaper("ThreeJS")}
                         {renderPaper("MaterialUI")}
                         {renderPaper("ChakraUI")}
-                        {renderPaper("Jest Testing")}
                         {renderPaper("Git")}
                         {renderPaper("Vim")}
                         {renderPaper("Jenkins")}
-                        {renderPaper("Mongoose")}
+                        {renderPaper("MongoDB")}
                         {renderPaper("MySQL")}
                         {renderPaper("TCL")}
                         {renderPaper("JSON")}

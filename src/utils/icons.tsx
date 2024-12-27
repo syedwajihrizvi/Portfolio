@@ -1,6 +1,7 @@
 import { SiTypescript, SiJavascript, 
         SiMongodb, SiPython, SiLinux, SiMicrosoftexcel, 
-        SiSwift, SiXcode, SiHtml5, SiArduino, SiAutocad, SiTailwindcss  } from "react-icons/si"
+        SiSwift, SiXcode, SiHtml5, SiArduino, SiAutocad, SiTailwindcss, 
+        SiReact} from "react-icons/si"
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandThreejs } from "react-icons/tb";
 
@@ -35,4 +36,6 @@ export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
         return <SiArduino color="#03fc98" fontSize={fontSize}/>
     if (icon == "autocad")
         return <SiAutocad color="#03fc98" fontSize={fontSize}/>
+    if (icon == 'react' || icon == 'react-native')
+        return <SiReact color="#03fc98" fontSize={fontSize}/>
 }

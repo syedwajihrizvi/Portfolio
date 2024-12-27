@@ -9,6 +9,8 @@ import iPhone16 from "../assets/images/projects/apple/iPhone16.webp"
 import paintVideoOne from "../assets/videos/paint1.mp4"
 import paintVideoTwo from "../assets/videos/paint2.mp4"
 import paintVideoThree from "../assets/videos/paint3.mp4"
+import restateVideo from "../assets/videos/restate.mp4"
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { MinorProjects, Project as ProjectType } from "../interfaces/Project"
@@ -186,6 +188,32 @@ const projects: Array<ProjectType> = [
         ],
         iframe: true,
         videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
+        image: cscape,
+        github: 'url'
+    },
+    {
+        description: `The first mobile application I ever built. Utilized React Native with Expo to build it. 
+                      The backend was made using Appwrite. Appwrite it a free to use web service that essentially
+                      provides a wrapped backend for your application. The main focus of this app was just to expose
+                      myself to React Native. I learned about the navigation system, the different components such as Views, Flatlist,
+                      and Tabs, furthermore I also was able to transfer a lot of my React Web developemt skills over. I built
+                      a slide show, however the animations were not working on mobile. Since this was my first, I focused mainly just
+                      on the structure and basic functionality. `,
+        title: 'Restate',
+        usage: [
+            {
+                title: 'React Native',
+                description: `Developed front end of application.`,
+                icon: "react-native"
+            },
+            {
+                title: 'Tailwind',
+                description: 'Easy to use inline styles',
+                icon: "tailwind"
+            },
+        ],
+        iframe: true,
+        videos: [restateVideo],
         image: cscape,
         github: 'url'
     }
