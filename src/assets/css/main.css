@@ -76,7 +76,21 @@ html, body, #root {
 @media screen and (max-width: 1024px) {
     .main-grid {
         display: grid;
-        grid-template-rows: 0.05fr 0.95fr auto;
+        grid-template-rows: 0.05fr 0.9fr auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "sidebar"
+            "main"
+            "footer";
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .main-grid {
+        display: grid;
+        grid-template-rows: 0.05fr 0.8fr auto;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "sidebar"
@@ -193,8 +207,8 @@ html, body, #root {
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 1.5rem;
     border-top: 1px solid white;
+    padding: 0 1.5rem;
 }
 
 .icon {
@@ -207,19 +221,21 @@ html, body, #root {
     transform: scale(1.2);
     color: var(--primary-color);
 }
+
 @media screen and (max-width: 1024px) {
     .flex-footer {
         padding-top: 10px;
-        padding-bottom: 10px;
+        align-items: center;
     }
 
 }
 
 @media screen and (max-width: 768px) {
     .flex-footer {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 0;
+        align-items: flex-start;
     }
+
 }
 
 /* Buttons */
