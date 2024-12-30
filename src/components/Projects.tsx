@@ -109,6 +109,32 @@ const projects: Array<ProjectType> = [
 
     },
     {
+        description: `The first mobile application I ever built. Utilized React Native with Expo to build it. 
+                      The backend was made using Appwrite. Appwrite it a free to use web service that essentially
+                      provides a wrapped backend for your application. The main focus of this app was just to expose
+                      myself to React Native. I learned about the navigation system, the different components such as Views, Flatlist,
+                      and Tabs, furthermore I also was able to transfer a lot of my React Web developemt skills over. I built
+                      a slide show, however the animations were not working on mobile. Since this was my first, I focused mainly just
+                      on the structure and basic functionality. `,
+        title: 'Restate',
+        usage: [
+            {
+                title: 'React Native',
+                description: `Developed front end of application.`,
+                icon: "react-native"
+            },
+            {
+                title: 'Tailwind',
+                description: 'Easy to use inline styles',
+                icon: "tailwind"
+            },
+        ],
+        iframe: true,
+        videos: [restateVideo],
+        image: cscape,
+        github: 'https://github.com/syedwajihrizvi/Restate.git'
+    },
+    {
         description: `An application that allows you to explore the various points of interests in any city around
                       the world! View destinations such as cafes, museums, restaurants, amusement parks, and various other
                       points of interest. Get valuable information such as reviews, opening times, website, and contact info.
@@ -137,6 +163,29 @@ const projects: Array<ProjectType> = [
         viewProject: 'https://cscape.netlify.app'
     },
     {
+        description: `Built this using React Native. This was the second ever app I buil. Explored various
+                      react-native concepts dealing with animations, uploading files, and proper tabs. The
+                      coolest part about this was definetly the animations. The trending section in specific
+                      was animated using the react-native-animatable library. `,
+        title: 'Restate',
+        usage: [
+            {
+                title: 'React Native',
+                description: `Developed front end of application.`,
+                icon: "react-native"
+            },
+            {
+                title: 'Tailwind',
+                description: 'Easy to use inline styles',
+                icon: "tailwind"
+            },
+        ],
+        iframe: true,
+        videos: [auroVideo],
+        image: cscape,
+        github: 'https://github.com/syedwajihrizvi/Auro.git'
+    },
+    {
         description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
                       It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
                       Furthermore the website includes 3D Models of the iPhone 15 as well. The model can be interacted with,
@@ -162,29 +211,6 @@ const projects: Array<ProjectType> = [
         image: iPhone15,
         github: 'https://github.com/syedwajihrizvi/iPhone15',
         viewProject: 'https://syed-rizvi-iphone-15.netlify.app/'
-    },
-    {
-        description: `Built this using React Native. This was the second ever app I buil. Explored various
-                      react-native concepts dealing with animations, uploading files, and proper tabs. The
-                      coolest part about this was definetly the animations. The trending section in specific
-                      was animated using the react-native-animatable library. `,
-        title: 'Restate',
-        usage: [
-            {
-                title: 'React Native',
-                description: `Developed front end of application.`,
-                icon: "react-native"
-            },
-            {
-                title: 'Tailwind',
-                description: 'Easy to use inline styles',
-                icon: "tailwind"
-            },
-        ],
-        iframe: true,
-        videos: [auroVideo],
-        image: cscape,
-        github: 'https://github.com/syedwajihrizvi/Auro.git'
     },
     {
         description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
@@ -215,32 +241,6 @@ const projects: Array<ProjectType> = [
         image: cscape,
         github: 'url'
     },
-    {
-        description: `The first mobile application I ever built. Utilized React Native with Expo to build it. 
-                      The backend was made using Appwrite. Appwrite it a free to use web service that essentially
-                      provides a wrapped backend for your application. The main focus of this app was just to expose
-                      myself to React Native. I learned about the navigation system, the different components such as Views, Flatlist,
-                      and Tabs, furthermore I also was able to transfer a lot of my React Web developemt skills over. I built
-                      a slide show, however the animations were not working on mobile. Since this was my first, I focused mainly just
-                      on the structure and basic functionality. `,
-        title: 'Restate',
-        usage: [
-            {
-                title: 'React Native',
-                description: `Developed front end of application.`,
-                icon: "react-native"
-            },
-            {
-                title: 'Tailwind',
-                description: 'Easy to use inline styles',
-                icon: "tailwind"
-            },
-        ],
-        iframe: true,
-        videos: [restateVideo],
-        image: cscape,
-        github: 'https://github.com/syedwajihrizvi/Restate.git'
-    }
 ]
 
 const moreProjects: Array<MinorProjects> = [
