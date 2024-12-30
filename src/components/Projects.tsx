@@ -166,7 +166,7 @@ const projects: Array<ProjectType> = [
     {
         description: `Built this using React Native. This was the second ever app I buil. Explored various
                       react-native concepts dealing with animations, uploading files, and proper tabs. The
-                      coolest part about this was definetly the animations. The trending section is specific
+                      coolest part about this was definetly the animations. The trending section in specific
                       was animated using the react-native-animatable library. `,
         title: 'Restate',
         usage: [
