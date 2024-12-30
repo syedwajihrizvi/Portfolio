@@ -184,7 +184,7 @@ const projects: Array<ProjectType> = [
         iframe: true,
         videos: [auroVideo],
         image: cscape,
-        github: 'url'
+        github: 'https://github.com/syedwajihrizvi/Auro.git'
     },
     {
         description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
@@ -239,7 +239,7 @@ const projects: Array<ProjectType> = [
         iframe: true,
         videos: [restateVideo],
         image: cscape,
-        github: 'url'
+        github: 'https://github.com/syedwajihrizvi/Restate.git'
     }
 ]
 
