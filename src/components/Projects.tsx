@@ -10,6 +10,7 @@ import paintVideoOne from "../assets/videos/paint1.mp4"
 import paintVideoTwo from "../assets/videos/paint2.mp4"
 import paintVideoThree from "../assets/videos/paint3.mp4"
 import restateVideo from "../assets/videos/restate.mp4"
+import auroVideo from "../assets/videos/auro.mp4"
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -161,6 +162,29 @@ const projects: Array<ProjectType> = [
         image: iPhone15,
         github: 'https://github.com/syedwajihrizvi/iPhone15',
         viewProject: 'https://syed-rizvi-iphone-15.netlify.app/'
+    },
+    {
+        description: `Built this using React Native. This was the second ever app I buil. Explored various
+                      react-native concepts dealing with animations, uploading files, and proper tabs. The
+                      coolest part about this was definetly the animations. The trending section is specific
+                      was animated using the react-native-animatable library. `,
+        title: 'Restate',
+        usage: [
+            {
+                title: 'React Native',
+                description: `Developed front end of application.`,
+                icon: "react-native"
+            },
+            {
+                title: 'Tailwind',
+                description: 'Easy to use inline styles',
+                icon: "tailwind"
+            },
+        ],
+        iframe: true,
+        videos: [auroVideo],
+        image: cscape,
+        github: 'url'
     },
     {
         description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
