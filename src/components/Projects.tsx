@@ -2,6 +2,7 @@ import Box from "@mui/material/Box"
 import Project from "./projects/Project"
 import gamegrid from "../assets/images/projects/gamecom/gamegrid.webp"
 import cscape from "../assets/images/projects/cscape/cscape.webp"
+import yoom from "../assets/images/projects/yoom/yoom.png"
 import airbnb from "../assets/images/projects/airbnb/airbnb.webp"
 import iPhone15 from "../assets/images/projects/apple/iPhone15.png"
 import iPhone16 from "../assets/images/projects/apple/iPhone16.webp"
@@ -161,6 +162,33 @@ const projects: Array<ProjectType> = [
         image: cscape,
         github: 'https://github.com/syedwajihrizvi/CScape',
         viewProject: 'https://cscape.netlify.app'
+    },
+    {
+        description: `This was a replica for the Zoom application. It was built using NextTS, along with popular libraries
+                     such  as Clerk for authentication and Stream for implementing calling. The app was also using ShadCN for
+                     beutiful ready-made components that were reusable and also customizable. This app allowed users to schedule
+                     meetings, join meetings, start personal rooms, and view saved recordings.`,
+        title: 'Yoom',
+        usage: [
+            {
+                title: 'Typescript',
+                description: `Developed front end with Next TS and ShadCN.`,
+                icon: "typescript"
+            },
+            {
+                title: 'Tailwind',
+                description: 'Easy to use inline styles.',
+                icon: "javascript"
+            },
+            {
+                title: 'Stream',
+                description: 'Implement calling features such as video, audio, and recordings.',
+                icon: "stream"
+            }
+        ],
+        image: yoom,
+        github: 'https://github.com/syedwajihrizvi/CallingApp',
+        viewProject: 'https://zoom-video-clone-syed-rizvi.netlify.app/'
     },
     {
         description: `Built this using React Native. This was the second ever app I buil. Explored various
