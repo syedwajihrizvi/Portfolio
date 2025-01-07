@@ -168,7 +168,7 @@ const projects: Array<ProjectType> = [
                      such  as Clerk for authentication and Stream for implementing calling. The app was also using ShadCN for
                      beutiful ready-made components that were reusable and also customizable. This app allowed users to schedule
                      meetings, join meetings, start personal rooms, and view saved recordings.`,
-        title: 'Yoom',
+        title: 'Cally',
         usage: [
             {
                 title: 'Typescript',
