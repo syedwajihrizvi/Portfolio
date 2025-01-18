@@ -456,6 +456,12 @@ html, body, #root {
 
 .skills {
     display: flex;
+    margin-bottom: 1rem;
+}
+
+.skill__title {
+    font-size: 1.4rem;
+    color: var(--primary-text-color)
 }
 
 .skills-cards {
@@ -498,11 +504,20 @@ html, body, #root {
 }
 
 .list__item {
-    padding: 0
+    padding: 0;
+}
+
+.skills .list__item {
+    margin: 1rem 0;
 }
 
 .list__item .text {
     color: var(--primary-text-color)
+}
+
+.list__item .text span {
+    font-style: italic;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
@@ -511,7 +526,7 @@ html, body, #root {
     }
 
     .skill__title {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .list__item .text {
@@ -523,7 +538,7 @@ html, body, #root {
 
 @media screen and (max-width: 768px) {
     .skill__title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 

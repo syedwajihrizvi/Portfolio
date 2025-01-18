@@ -84,7 +84,7 @@ const projects: Array<ProjectType> = [
         description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.
                      I'm a huge fan of the look and feel of the Airbnb brand. I decided to make my own landing page for
                      the company. It sort of a parady.`,
-        title: 'Airbnb-Parody',
+        title: 'Airbnb',
         usage: [
             {
                 title: 'HTML',
@@ -110,14 +110,11 @@ const projects: Array<ProjectType> = [
 
     },
     {
-        description: `The first mobile application I ever built. Utilized React Native with Expo to build it. 
-                      The backend was made using Appwrite. Appwrite it a free to use web service that essentially
-                      provides a wrapped backend for your application. The main focus of this app was just to expose
-                      myself to React Native. I learned about the navigation system, the different components such as Views, Flatlist,
-                      and Tabs, furthermore I also was able to transfer a lot of my React Web developemt skills over. I built
-                      a slide show, however the animations were not working on mobile. Since this was my first, I focused mainly just
-                      on the structure and basic functionality. `,
-        title: 'Restate',
+        description: `Built this using React Native. This was the second ever app I buil. Explored various
+                      react-native concepts dealing with animations, uploading files, and proper tabs. The
+                      coolest part about this was definetly the animations. The trending section in specific
+                      was animated using the react-native-animatable library. `,
+        title: 'Auro',
         usage: [
             {
                 title: 'React Native',
@@ -131,9 +128,9 @@ const projects: Array<ProjectType> = [
             },
         ],
         iframe: true,
-        videos: [restateVideo],
+        videos: [auroVideo],
         image: cscape,
-        github: 'https://github.com/syedwajihrizvi/Restate.git'
+        github: 'https://github.com/syedwajihrizvi/Auro.git'
     },
     {
         description: `An application that allows you to explore the various points of interests in any city around
@@ -164,6 +161,37 @@ const projects: Array<ProjectType> = [
         viewProject: 'https://cscape.netlify.app'
     },
     {
+        description: `The first mobile application I ever built. Utilized React Native with Expo to build it. 
+                      The backend was made using Appwrite. Appwrite it a free to use web service that essentially
+                      provides a wrapped backend for your application. The main focus of this app was just to expose
+                      myself to React Native. I learned about the navigation system, the different components such as Views, Flatlist,
+                      and Tabs, furthermore I also was able to transfer a lot of my React Web developemt skills over. I built
+                      a slide show, however the animations were not working on mobile. Since this was my first, I focused mainly just
+                      on the structure and basic functionality. `,
+        title: 'Restate',
+        usage: [
+            {
+                title: 'React Native',
+                description: `Developed front end of application and build reusuable components.`,
+                icon: "react-native"
+            },
+            {
+                title: 'Nativewind',
+                description: 'Easy to use inline styles',
+                icon: "tailwind"
+            },
+            {
+                title: 'Appwrite',
+                description: 'Backend for storage and authentication',
+                icon: "appwrite"
+            },
+        ],
+        iframe: true,
+        videos: [restateVideo],
+        image: cscape,
+        github: 'https://github.com/syedwajihrizvi/Restate.git'
+    },
+    {
         description: `This was a replica for the Zoom application. It was built using NextTS, along with popular libraries
                      such  as Clerk for authentication and Stream for implementing calling. The app was also using ShadCN for
                      beutiful ready-made components that were reusable and also customizable. This app allowed users to schedule
@@ -189,29 +217,6 @@ const projects: Array<ProjectType> = [
         image: yoom,
         github: 'https://github.com/syedwajihrizvi/CallingApp',
         viewProject: 'https://zoom-video-clone-syed-rizvi.netlify.app/'
-    },
-    {
-        description: `Built this using React Native. This was the second ever app I buil. Explored various
-                      react-native concepts dealing with animations, uploading files, and proper tabs. The
-                      coolest part about this was definetly the animations. The trending section in specific
-                      was animated using the react-native-animatable library. `,
-        title: 'Restate',
-        usage: [
-            {
-                title: 'React Native',
-                description: `Developed front end of application.`,
-                icon: "react-native"
-            },
-            {
-                title: 'Tailwind',
-                description: 'Easy to use inline styles',
-                icon: "tailwind"
-            },
-        ],
-        iframe: true,
-        videos: [auroVideo],
-        image: cscape,
-        github: 'https://github.com/syedwajihrizvi/Auro.git'
     },
     {
         description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
@@ -272,6 +277,13 @@ const projects: Array<ProjectType> = [
 ]
 
 const moreProjects: Array<MinorProjects> = [
+    {
+        title: 'Pint',
+        description: `An uber clone app I was working on currently which implements google maps and stripe payments.
+                      Building through react-native, tailwind, clerk, and NeonDB.`,
+        tools: ['typescript', 'tailwind', "clerk"],
+        github: 'https://github.com/syedwajihrizvi/Pint'
+    },
     {
         title: 'Set',
         description: `An iOS application I built while taking Stanford University's CS193p course.

@@ -57,7 +57,7 @@ function About() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}>
                         <Typography variant="h4" className="heading">Syed Wajih Rizvi</Typography>
-                        <Typography variant="h5" className="title">Software Engineer</Typography>
+                        <Typography variant="h5" className="title">Software Engineer at Ford</Typography>
                         <Typography variant="body1" className="intro">
                             I build, test, and deploy applications.
                         </Typography>
@@ -67,77 +67,56 @@ function About() {
                         animate={{opacity: 1, x: 0}}
                         transition={{duration: 0.6}}>
                         <List className="list">
-                            <ListItem className="list__item" alignItems="flex-start">
+                            <ListItem className="list__item" alignItems="center">
                                 <ListItemIcon sx={{marginRight: 0}}>
-                                        <SiTypescript color="#03fc98" fontSize='2rem'/>
+                                        <SiTypescript color="#03fc98" fontSize='3rem'/>
                                 </ListItemIcon>
                                 <ListItemText 
-                                    primary={<Typography className="skill__title" fontWeight="900">Typescript</Typography>}
-                                    secondary={
-                                        <Typography className="text">Use it to build front end applications.</Typography>
-                                    }/>
+                                    primary={<Typography className="skill__title" fontWeight="900">Typescript</Typography>}/>
                             </ListItem>
-                            <ListItem className="list__item" alignItems="flex-start">
+                            <ListItem className="list__item" alignItems="center">
                                 <ListItemIcon>
-                                        <SiPython color="#03fc98" fontSize='2rem'/>
+                                        <SiJavascript color="#03fc98" fontSize='3rem'/>
                                 </ListItemIcon>
                                 <ListItemText 
-                                    primary={<Typography fontWeight="900" className="skill__title">Python</Typography>}
-                                    secondary={
-                                        <Typography className="text">Webscraping, backend, and testing.</Typography>
-                                    }/>
+                                    primary={<Typography fontWeight="900" className="skill__title">Javascript</Typography>}/>
                             </ListItem>
-                            <ListItem className="list__item" alignItems="flex-start">
+                            <ListItem className="list__item" alignItems="center">
                                 <ListItemIcon>
-                                        <SiJavascript color="#03fc98" fontSize='2rem'/>
+                                        <SiPython color="#03fc98" fontSize='3rem'/>
                                 </ListItemIcon>
                                 <ListItemText 
-                                    primary={<Typography fontWeight="900" className="skill__title">Javascript</Typography>}
-                                    secondary={
-                                        <Typography className="text">Mainly use it for setting up backend.</Typography>
-                                    }/>
+                                    primary={<Typography fontWeight="900" className="skill__title">Python</Typography>}/>
                             </ListItem>
-                            <ListItem className="list__item" alignItems="flex-start">
+                            <ListItem className="list__item" alignItems="center">
                                 <ListItemIcon>
-                                        <FaGithub color="#03fc98" fontSize='2rem'/>
+                                        <FaGithub color="#03fc98" fontSize='3rem'/>
                                 </ListItemIcon>
                                 <ListItemText 
-                                    primary={<Typography fontWeight="900" className="skill__title">Git</Typography>}
-                                    secondary={
-                                        <Typography className="text">Managing code and working with others.</Typography>
-                                    }/>
+                                    primary={<Typography fontWeight="900" className="skill__title">Git</Typography>}/>
                             </ListItem>                      
                         </List>
                         <List className="list">
-                            <ListItem className="list__item" alignItems="flex-start">
+                            <ListItem className="list__item" alignItems="center">
                                 <ListItemIcon>
-                                        <SiHtml5 color="#03fc98" fontSize='2rem'/>
+                                        <SiHtml5 color="#03fc98" fontSize='3rem'/>
                                 </ListItemIcon>
                                 <ListItemText 
-                                    primary={<Typography fontWeight="900" className="skill__title">HTML/CSS</Typography>}
-                                    secondary={
-                                        <Typography className="text">To build beautiful webpages.</Typography>
-                                    }/>
+                                    primary={<Typography fontWeight="900" className="skill__title">HTML/CSS</Typography>}/>
                             </ListItem>  
-                            <ListItem className="list__item" alignItems="flex-start">
+                            <ListItem className="list__item" alignItems="center">
                                 <ListItemIcon>
-                                        <SiMongodb color="#03fc98" fontSize='2rem'/>
+                                        <SiMongodb color="#03fc98" fontSize='3rem'/>
                                 </ListItemIcon>
                                 <ListItemText 
-                                    primary={<Typography fontWeight="900" className="skill__title">MongoDB</Typography>}
-                                    secondary={
-                                        <Typography className="text">Utilize it for simple non-relational databases.</Typography>
-                                    }/>
+                                    primary={<Typography fontWeight="900" className="skill__title">MongoDB</Typography>}/>
                             </ListItem>
-                            <ListItem className="list__item" alignItems="flex-start">
+                            <ListItem className="list__item" alignItems="center">
                                 <ListItemIcon>
-                                        <PiFileSqlFill color="#03fc98" fontSize='2.5rem'/>
+                                        <PiFileSqlFill color="#03fc98" fontSize='3.5rem'/>
                                 </ListItemIcon>
                                 <ListItemText 
-                                    primary={<Typography fontWeight="900" className="skill__title">SQL</Typography>}
-                                    secondary={
-                                        <Typography className="text">Utilized for relational databases.</Typography>
-                                    }/>
+                                    primary={<Typography fontWeight="900" className="skill__title">SQL</Typography>}/>
                             </ListItem>                
                         </List>
                     </MotionBox>
