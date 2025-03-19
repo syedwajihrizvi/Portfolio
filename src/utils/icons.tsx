@@ -3,7 +3,7 @@ import { SiTypescript, SiAppwrite, SiJavascript,
         SiSwift, SiXcode, SiHtml5, SiArduino, SiAutocad, SiTailwindcss, 
         SiReact, SiStreamlit, SiClerk} from "react-icons/si"
 import { IoLogoCss3 } from "react-icons/io";
-import { TbBrandThreejs } from "react-icons/tb";
+import { TbBrandThreejs, TbBrandCSharp } from "react-icons/tb";
 
 export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
     if (icon == "typescript")
@@ -44,4 +44,6 @@ export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
         return <SiClerk color='#03fc98' fontSize={fontSize}/>
     if (icon == 'appwrite')
         return <SiAppwrite color='#03fc98' fontSize={fontSize}/>
+    if (icon == "c#")
+        return <TbBrandCSharp color="#03fc98" fontSize={fontSize}/>
 }

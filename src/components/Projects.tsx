@@ -6,7 +6,7 @@ import yoom from "../assets/images/projects/yoom/yoom.png"
 import airbnb from "../assets/images/projects/airbnb/airbnb.webp"
 import iPhone15 from "../assets/images/projects/apple/iPhone15.png"
 import iPhone16 from "../assets/images/projects/apple/iPhone16.webp"
-
+import StillWorking from "../assets/images/projects/rockservers/stillworking.webp"
 import paintVideoOne from "../assets/videos/paint1.mp4"
 import paintVideoTwo from "../assets/videos/paint2.mp4"
 import paintVideoThree from "../assets/videos/paint3.mp4"
@@ -79,6 +79,33 @@ const projects: Array<ProjectType> = [
         image: iPhone16,
         github: 'https://github.com/syedwajihrizvi/iPhone16',
         viewProject: 'https://syed-rizvi-iphone-16.netlify.app/'
+    },
+    {
+        description: `An passion project I'm currently making for my favorite company, Rockstar Games. It is essentially
+                      a online session management system for games like RDR2, GTA 5, and GTA 6. People can post
+                      details about their online session that they want other players to join, run heists, play RP
+                      Servers, or simply post about something in the games you want to share. Users can message each other,
+                      track sessions they have been part of, make friends, and collaborate on the world of Rockstar.`,
+        title: 'RockServers for Rockstar Games',
+        usage: [
+            {
+                title: 'Typescript',
+                description: 'Building reusable components.',
+                icon: "typescript"
+            },
+            {
+                title: 'Javascript',
+                description: `Vanilla JS for useEffect animations`,
+                icon: "javascript"
+            },
+            {
+                title: 'C#',
+                description: 'The backend using ASP.NET and WebAPI',
+                icon: "c#"
+            }
+        ],
+        image: StillWorking,
+        github: 'https://github.com/syedwajihrizvi/RockServers',
     },
     {
         description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.

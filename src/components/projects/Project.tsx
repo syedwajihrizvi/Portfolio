@@ -7,6 +7,7 @@ import { List, ListItem, Divider, ListItemText, ListItemIcon, Link } from "@mui/
 import Typography from "@mui/material/Typography"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
+import Timer from "@mui/icons-material/Timer"
 import InfoIcon from '@mui/icons-material/Info';
 import SummarizeIcon from '@mui/icons-material/Summarize';
 
@@ -119,16 +120,17 @@ function Project({information}: Props) {
                 <Grid className="project__desc" item xs={12} md={6}>
                     <Box className="project__desc__content">
                         <Box className="project__desc__data">
+                            <Typography fontSize={24} fontWeight="bold">{information.title}</Typography>
                             {viewProjectInfo && projectInfo()}
                             {!viewProjectInfo && projectUsage()}
                         </Box>
                         <Box className="project__buttons">
-                        {information.viewProject &&
+                        {information.viewProject ?
                         <Link href={information.viewProject} color='inherit' target="_blank" rel="noopener noreferrer">
                             <Button className='project__button button--primary' startIcon={<LaunchIcon/>}>
                             Vist {information.title}
                             </Button>
-                        </Link>
+                        </Link> : <Button className='project__button button--primary' startIcon={<Timer/>}>Coming Soon</Button>
                         }
                         <Link href={information.github} color='inherit' 
                               target="_blank" rel="noopener noreferrer">
