@@ -106,6 +106,7 @@ const projects: Array<ProjectType> = [
         ],
         image: StillWorking,
         github: 'https://github.com/syedwajihrizvi/RockServers',
+        status: "tbd"
     },
     {
         description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.

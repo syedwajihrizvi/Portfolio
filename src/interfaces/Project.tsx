@@ -11,6 +11,7 @@ export interface Project {
     image: string,
     github: string,
     viewProject?: string,
+    status?: string,
     iframe?: boolean,
     videos?: string[]
 }

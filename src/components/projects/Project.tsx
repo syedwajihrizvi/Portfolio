@@ -125,13 +125,13 @@ function Project({information}: Props) {
                             {!viewProjectInfo && projectUsage()}
                         </Box>
                         <Box className="project__buttons">
-                        {information.viewProject ?
+                        {information.viewProject &&
                         <Link href={information.viewProject} color='inherit' target="_blank" rel="noopener noreferrer">
                             <Button className='project__button button--primary' startIcon={<LaunchIcon/>}>
                             Vist {information.title}
                             </Button>
-                        </Link> : <Button className='project__button button--primary' startIcon={<Timer/>}>Coming Soon</Button>
-                        }
+                        </Link>}
+                        {information.status && information.status == "coming__soon" && <Button className='project__button button--primary' startIcon={<Timer/>}>Coming Soon</Button>}
                         <Link href={information.github} color='inherit' 
                               target="_blank" rel="noopener noreferrer">
                             <Button className='project__button button--git' startIcon={<GitHubIcon/>}>
