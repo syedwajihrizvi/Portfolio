@@ -72,7 +72,7 @@ const projects: Array<ProjectType> = [
             },
             {
                 title: 'ThreeJS',
-                description: 'Beautiful 3D Rendering of various iPhone 15 Models.',
+                description: 'Beautiful 3D Rendering of various iPhone 16 Models.',
                 icon: "threeJS"
             }
         ],

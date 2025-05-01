@@ -114,7 +114,8 @@ function Project({information}: Props) {
         <Container className="project shadow">
             <Grid className="project__grid" container spacing={2}>
                 <Grid className="project__img" item xs={12} md={6}>
-                    {!information.iframe && <img src={information.image}/>}
+                    {!information.iframe && 
+                    <img src={information.image}/>}
                     {information.iframe && renderVideos()}
                 </Grid>
                 <Grid className="project__desc" item xs={12} md={6}>
@@ -128,7 +129,7 @@ function Project({information}: Props) {
                         {information.viewProject &&
                         <Link href={information.viewProject} color='inherit' target="_blank" rel="noopener noreferrer">
                             <Button className='project__button button--primary' startIcon={<LaunchIcon/>}>
-                            Vist {information.title}
+                            View {information.title}
                             </Button>
                         </Link>}
                         {information.status && information.status == "coming__soon" && <Button className='project__button button--primary' startIcon={<Timer/>}>Coming Soon</Button>}
