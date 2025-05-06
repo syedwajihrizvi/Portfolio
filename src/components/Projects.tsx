@@ -6,7 +6,7 @@ import yoom from "../assets/images/projects/yoom/yoom.png"
 import airbnb from "../assets/images/projects/airbnb/airbnb.webp"
 import iPhone15 from "../assets/images/projects/apple/iPhone15.png"
 import iPhone16 from "../assets/images/projects/apple/iPhone16.webp"
-import StillWorking from "../assets/images/projects/rockservers/stillworking.webp"
+import rockServers from "../assets/images/projects/rockservers/rockservers.webp"
 import paintVideoOne from "../assets/videos/paint1.mp4"
 import paintVideoTwo from "../assets/videos/paint2.mp4"
 import paintVideoThree from "../assets/videos/paint3.mp4"
@@ -104,7 +104,7 @@ const projects: Array<ProjectType> = [
                 icon: "c#"
             }
         ],
-        image: StillWorking,
+        image: rockServers,
         github: 'https://github.com/syedwajihrizvi/RockServers',
         status: "tbd"
     },
