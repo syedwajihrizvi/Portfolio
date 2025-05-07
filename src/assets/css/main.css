@@ -616,6 +616,7 @@ html, body, #root {
 
 .project .project__img img {
     width: 100%;
+    object-fit: cover;
 }
 
 .project:last-of-type {

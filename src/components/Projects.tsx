@@ -6,7 +6,7 @@ import yoom from "../assets/images/projects/yoom/yoom.png"
 import airbnb from "../assets/images/projects/airbnb/airbnb.webp"
 import iPhone15 from "../assets/images/projects/apple/iPhone15.png"
 import iPhone16 from "../assets/images/projects/apple/iPhone16.webp"
-import rockServers from "../assets/images/projects/rockservers/rockservers.webp"
+import rockServers from "../assets/images/projects/rockservers/rockservers.png"
 import paintVideoOne from "../assets/videos/paint1.mp4"
 import paintVideoTwo from "../assets/videos/paint2.mp4"
 import paintVideoThree from "../assets/videos/paint3.mp4"
@@ -86,7 +86,7 @@ const projects: Array<ProjectType> = [
                       details about their online session that they want other players to join, run heists, play RP
                       Servers, or simply post about something in the games you want to share. Users can message each other,
                       track sessions they have been part of, make friends, and collaborate on the world of Rockstar.`,
-        title: 'RockServers for Rockstar Games',
+        title: 'Rockstar Games Crew',
         usage: [
             {
                 title: 'Typescript',
