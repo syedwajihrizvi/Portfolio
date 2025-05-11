@@ -158,8 +158,7 @@ function About() {
                     <Typography className="about__text" variant='h6' gutterBottom>
                         My primary focus these days is to build an automation framework to test the cloud capabilities of Ford's next
                         generation vehicles. I serve as the test lead for several components and ensure the product is delivered to the market
-                        with the upmost perfection. In my spare time, I like to focus on building Full Stack applications for the web using 
-                        popular libraries and frameworks such as React, Express, and Django.
+                        with the upmost perfection. In my spare time, I like to focus on building Full Stack applications for the web.
                     </Typography>
                     <Typography className="about__text" variant='h6' gutterBottom>
                         When I'm not coding away, I enjoy several different hobbies such as horse riding, video games, playing football,

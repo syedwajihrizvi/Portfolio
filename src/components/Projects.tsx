@@ -82,11 +82,11 @@ const projects: Array<ProjectType> = [
     },
     {
         description: `An passion project I'm currently making for my favorite company, Rockstar Games. It is essentially
-                      a online session management system for games like RDR2, GTA 5, and GTA 6. People can post
+                      a "reddit" for games like RDR2, GTA 5, and GTA 6. People can post
                       details about their online session that they want other players to join, run heists, play RP
-                      Servers, or simply post about something in the games you want to share. Users can message each other,
-                      track sessions they have been part of, make friends, and collaborate on the world of Rockstar.`,
-        title: 'Rockstar Games Crew',
+                      Servers, or simply post about something in the games you want to share. I feel like with how popular
+                      GTA 6 will be, having a dedicated social platform exclusively for Rockstar games would be ideal.`,
+        title: 'Rockstar Games Hub',
         usage: [
             {
                 title: 'Typescript',
@@ -94,9 +94,9 @@ const projects: Array<ProjectType> = [
                 icon: "typescript"
             },
             {
-                title: 'Javascript',
-                description: `Vanilla JS for useEffect animations`,
-                icon: "javascript"
+                title: 'SQL',
+                description: `Database was made using MySql`,
+                icon: "sql"
             },
             {
                 title: 'C#',

@@ -4,6 +4,7 @@ import { SiTypescript, SiAppwrite, SiJavascript,
         SiReact, SiStreamlit, SiClerk} from "react-icons/si"
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandThreejs, TbBrandCSharp } from "react-icons/tb";
+import { PiFileSqlFill } from "react-icons/pi";
 
 export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
     if (icon == "typescript")
@@ -46,4 +47,6 @@ export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
         return <SiAppwrite color='#03fc98' fontSize={fontSize}/>
     if (icon == "c#")
         return <TbBrandCSharp color="#03fc98" fontSize={fontSize}/>
+    if (icon == "sql")
+        return <PiFileSqlFill color="#03fc98" fontSize={fontSize}/>
 }
