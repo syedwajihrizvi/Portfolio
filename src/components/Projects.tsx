@@ -23,6 +23,38 @@ import gsap from "gsap"
 
 const projects: Array<ProjectType> = [
     {
+        description: `A social media platform specifically for Rockstar Games. Users can post about their
+                     favorite Rockstart games inclusing RDR2, GTA5, GTA6, and RDR1. They can follow each other,
+                     comment, like , and find online gaming sessions. I made this cause I'm a big fan of Rockstar Games
+                     and this project was done specifically for them.`,
+        title: 'Rockstar Games Hub',
+        usage: [
+            {
+                title: 'Typescript',
+                description: 'Building reusable components.',
+                icon: "typescript"
+            },
+            {
+                title: 'SQL',
+                description: `Database was made using MySql`,
+                icon: "sql"
+            },
+            {
+                title: 'C#',
+                description: 'The backend using ASP.NET and WebAPI',
+                icon: "c#"
+            },
+            {
+                title: 'AWS',
+                description: 'Cloud storage for image and video',
+                icon: "aws"
+            }
+        ],
+        image: rockServers,
+        github: 'https://github.com/syedwajihrizvi/RockServers',
+        viewProject: 'https://rockstarcommunityhub.netlify.app/'
+    },
+    {
         description: `A website that serves millions of games from the IGDB API. Create your account,
                 browse any game you want, view game trailers, plots, summaries, and reviews. The front end
                 was made using React and the Chakra UI library. I made the back end using NodeJS, which
@@ -79,38 +111,6 @@ const projects: Array<ProjectType> = [
         image: iPhone16,
         github: 'https://github.com/syedwajihrizvi/iPhone16',
         viewProject: 'https://syed-rizvi-iphone-16.netlify.app/'
-    },
-    {
-        description: `A social media platform specifically for Rockstar Games. Users can post about their
-                     favorite Rockstart games inclusing RDR2, GTA5, GTA6, and RDR1. They can follow each other,
-                     comment, like , and find online gaming sessions. I made this cause I'm a big fan of Rockstar Games
-                     and this project was done specifically for them.`,
-        title: 'Rockstar Games Hub',
-        usage: [
-            {
-                title: 'Typescript',
-                description: 'Building reusable components.',
-                icon: "typescript"
-            },
-            {
-                title: 'SQL',
-                description: `Database was made using MySql`,
-                icon: "sql"
-            },
-            {
-                title: 'C#',
-                description: 'The backend using ASP.NET and WebAPI',
-                icon: "c#"
-            },
-            {
-                title: 'AWS',
-                description: 'Cloud storage for image and video',
-                icon: "aws"
-            }
-        ],
-        image: rockServers,
-        github: 'https://github.com/syedwajihrizvi/RockServers',
-        viewProject: 'https://rockstarcommunityhub.netlify.app/'
     },
     {
         description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.
