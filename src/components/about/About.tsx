@@ -3,7 +3,7 @@ import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 import { List, ListItem, ListItemText, ListItemIcon, Paper } from "@mui/material"
 import { SiTypescript, SiPython, SiJavascript, SiHtml5, SiMongodb } from "react-icons/si";
-import { FaGithub } from "react-icons/fa6";
+import { TbBrandCSharp } from "react-icons/tb"
 import { PiFileSqlFill } from "react-icons/pi";
 import { motion } from 'framer-motion'
 import waterlooLogo from "../../assets/images/about/uni.png"
@@ -90,11 +90,11 @@ function About() {
                             </ListItem>
                             <ListItem className="list__item" alignItems="center">
                                 <ListItemIcon>
-                                        <FaGithub color="#03fc98" fontSize='3rem'/>
+                                        <TbBrandCSharp color="#03fc98" fontSize='3.5rem'/>
                                 </ListItemIcon>
                                 <ListItemText 
-                                    primary={<Typography fontWeight="900" className="skill__title">Git</Typography>}/>
-                            </ListItem>                      
+                                    primary={<Typography fontWeight="900" className="skill__title">C#</Typography>}/>
+                            </ListItem>                     
                         </List>
                         <List className="list">
                             <ListItem className="list__item" alignItems="center">
@@ -117,7 +117,7 @@ function About() {
                                 </ListItemIcon>
                                 <ListItemText 
                                     primary={<Typography fontWeight="900" className="skill__title">SQL</Typography>}/>
-                            </ListItem>                
+                            </ListItem>            
                         </List>
                     </MotionBox>
                     <Box className="skills-cards">
