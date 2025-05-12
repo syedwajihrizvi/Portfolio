@@ -81,11 +81,10 @@ const projects: Array<ProjectType> = [
         viewProject: 'https://syed-rizvi-iphone-16.netlify.app/'
     },
     {
-        description: `An passion project I'm currently making for my favorite company, Rockstar Games. It is essentially
-                      a "reddit" for games like RDR2, GTA 5, and GTA 6. People can post
-                      details about their online session that they want other players to join, run heists, play RP
-                      Servers, or simply post about something in the games you want to share. I feel like with how popular
-                      GTA 6 will be, having a dedicated social platform exclusively for Rockstar games would be ideal.`,
+        description: `A social media platform specifically for Rockstar Games. Users can post about their
+                     favorite Rockstart games inclusing RDR2, GTA5, GTA6, and RDR1. They can follow each other,
+                     comment, like , and find online gaming sessions. I made this cause I'm a big fan of Rockstar Games
+                     and this project was done specifically for them.`,
         title: 'Rockstar Games Hub',
         usage: [
             {
@@ -102,11 +101,16 @@ const projects: Array<ProjectType> = [
                 title: 'C#',
                 description: 'The backend using ASP.NET and WebAPI',
                 icon: "c#"
+            },
+            {
+                title: 'AWS',
+                description: 'Cloud storage for image and video',
+                icon: "aws"
             }
         ],
         image: rockServers,
         github: 'https://github.com/syedwajihrizvi/RockServers',
-        status: "tbd"
+        viewProject: 'https://rockstarcommunityhub.netlify.app/'
     },
     {
         description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.

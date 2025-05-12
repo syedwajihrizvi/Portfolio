@@ -5,6 +5,7 @@ import { SiTypescript, SiAppwrite, SiJavascript,
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandThreejs, TbBrandCSharp } from "react-icons/tb";
 import { PiFileSqlFill } from "react-icons/pi";
+import { FaAws } from "react-icons/fa6";
 
 export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
     if (icon == "typescript")
@@ -49,4 +50,6 @@ export const renderIcon = (icon: string, fontSize: string = '1.5rem') => {
         return <TbBrandCSharp color="#03fc98" fontSize={fontSize}/>
     if (icon == "sql")
         return <PiFileSqlFill color="#03fc98" fontSize={fontSize}/>
+    if (icon == "aws")
+        return <FaAws color="#03fc98" fontSize={fontSize}/>
 }
