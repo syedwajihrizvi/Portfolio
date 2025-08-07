@@ -5,6 +5,7 @@ import { List, ListItem, ListItemText, ListItemIcon, Paper } from "@mui/material
 import { SiTypescript, SiPython, SiJavascript, SiHtml5, SiMongodb } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb"
 import { PiFileSqlFill } from "react-icons/pi";
+import { FaJava } from "react-icons/fa";
 import { motion } from 'framer-motion'
 import waterlooLogo from "../../assets/images/about/uni.png"
 import { useGSAP } from '@gsap/react'
@@ -117,13 +118,20 @@ function About() {
                                 </ListItemIcon>
                                 <ListItemText 
                                     primary={<Typography fontWeight="900" className="skill__title">SQL</Typography>}/>
-                            </ListItem>            
+                            </ListItem>
+                            <ListItem className="list__item" alignItems="center">
+                                <ListItemIcon>
+                                        <FaJava color="#03fc98" fontSize='3.5rem'/>
+                                </ListItemIcon>
+                                <ListItemText 
+                                    primary={<Typography fontWeight="900" className="skill__title">Java</Typography>}/>
+                            </ListItem>         
                         </List>
                     </MotionBox>
                     <Box className="skills-cards">
                         {renderPaper("React")}
                         {renderPaper("React-Native")}
-                        {renderPaper("Django")}
+                        {renderPaper("SpringBoot")}
                         {renderPaper("Slash Testing")}
                         {renderPaper("Bootstrap")}
                         {renderPaper("Tailwind")}
@@ -137,12 +145,12 @@ function About() {
                         {renderPaper("Jenkins")}
                         {renderPaper("MongoDB")}
                         {renderPaper("MySQL")}
+                        {renderPaper("PostgresSQL")}
                         {renderPaper("TCL")}
                         {renderPaper("JSON")}
                         {renderPaper("Linux")}
                         {renderPaper("Jira")}
                         {renderPaper("Postman")}
-                        {renderPaper("CPython")}
                         {renderPaper("Selenium")}
                     </Box>
                 </Box>
