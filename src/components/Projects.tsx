@@ -24,7 +24,12 @@ import gsap from "gsap";
 
 const projects: Array<ProjectType> = [
   {
-    description: `Hirvo is only about one thing: Hiring. No social feeds, no influencer posts, no community noise. Companies find talent. Talent finds jobs. If it doesn't help you hire or get hired, it doesn't belong here.`,
+    description: `Hirvo is an app I have decided to develop. It started of as a simple passion project to broaden my skills, but I soon realized that it had the potential to be something much bigger.
+                     Hirvo is an AI-powered job search and recruitment platform that streamlines every step of the hiring journey. Candidates can upload resumes, 
+                     record video introductions, and connect directly with recruiters through chat or video calls. 
+                        With features like Quick Apply, AI-driven job matching, and smart interview prep, 
+                     Hirvo makes finding and landing your next opportunity faster and more personal. 
+                     Whether you’re a job seeker or an employer, Hirvo brings efficiency and connection to the hiring experience.`,
     title: "Hirvo",
     usage: [
       {
