@@ -207,12 +207,20 @@ function About() {
             multiple projects, and expanded my skill set to encompass a wide range of useful technologies.
           </Typography>
           <Typography className="about__text" variant="h6" gutterBottom>
-            My primary focus these days is to focus on building Jobee, an AI powered job search platform that
-            streamlines the hiring process for both candidates and employers, provided interview preparation tools,
-            quick apply features, and in house video calling and chat features. I'm currently the founder and full stack
-            developer of the platform and have been working on it since early 2025. Prior to Jobee, I worked at Ford
-            Motor Company as a Lead Software Automation Engineer, but I decided to leave and pursue my passion of
-            building my own product.
+            My primary focus these days is to focus on building{" "}
+            <a
+              href="https://hirvo.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#10b981", fontWeight: "600", textDecoration: "underline" }}
+            >
+              Hirvo
+            </a>
+            , an AI powered job search platform that streamlines the hiring process for both candidates and employers,
+            provided interview preparation tools, quick apply features, and in house video calling and chat features.
+            I'm currently the founder and full stack developer of the platform and have been working on it since early
+            2025. Prior to Hirvo, I worked at Ford Motor Company as a Lead Software Automation Engineer, but I decided
+            to leave and pursue my passion of building my own product.
           </Typography>
           <Typography className="about__text" variant="h6" gutterBottom>
             I hope to continue to develop my skills and surround myself with people who bring out the best of me.

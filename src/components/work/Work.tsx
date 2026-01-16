@@ -7,16 +7,16 @@ import gsap from "gsap";
 
 const companies: workInformation[] = [
   {
-    companyName: "Jobee",
+    companyName: "Hirvo",
     position: "Founder & Full Stack Developer",
-    location: "Niagara Falls, ON",
+    location: "Waterloo, ON",
     yearsWorked: "2025-Present",
-    description: `Jobee is an AI-powered job search and recruitment platform that 
+    description: `Hirvo is an AI-powered job search and recruitment platform that 
                       streamlines every step of the hiring journey. Candidates can upload resumes, 
                      record video introductions, and connect directly with recruiters through chat or video calls. 
                         With features like Quick Apply, AI-driven job matching, and smart interview prep, 
-                        Jobee makes finding and landing your next opportunity faster and more personal. 
-                        Whether you’re a job seeker or an employer, Jobee brings efficiency and connection to the hiring experience.`,
+                        Hirvo makes finding and landing your next opportunity faster and more personal. 
+                        Whether you’re a job seeker or an employer, Hirvo brings efficiency and connection to the hiring experience.`,
     skills: [
       "React Native",
       "Typescript",
