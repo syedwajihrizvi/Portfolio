@@ -3,7 +3,7 @@ html, body, #root {
     margin: 0;
     padding: 0;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
   }
 
 @media screen and (max-width: 768px) {
