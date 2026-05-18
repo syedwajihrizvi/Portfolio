@@ -53,6 +53,90 @@ const projects: Array<ProjectType> = [
     viewProject: "https://hirvo.ca/",
   },
   {
+    description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
+                      in an enclosed room. It was built as part of my 4th year univeristy captstone project. The robot would
+                      take in an DXF file which would essentially be a set of coordinates translated from an AutoCAD file. The
+                      algorithm will then determine the best path to navigate the coordinates in the most efficient way possible.
+                      Utilzing its on board LiDar, it uses its localization system to navigate the path in a given room. `,
+    title: "P.A.I.N.T",
+    usage: [
+      {
+        title: "Python",
+        description: `Programmed RasberryPi using Python.`,
+        icon: "python",
+      },
+      {
+        title: "Linux",
+        description: "RasberryPi is Linux based so had to utilize several linux commands.",
+        icon: "linux",
+      },
+      {
+        title: "Excel",
+        description: "Collecting localization data and testing algorithm accuracy.",
+        icon: "excel",
+      },
+    ],
+    iframe: true,
+    videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
+    image: cscape,
+    github: "url",
+  },
+  {
+    description: `An Apple inspired website for the iPhone 16 and iPhone 16 Pro. Contains interactive 3D
+                      Models along with highlights of several features. 3D Models were built with
+                      ThreeJS and animations done with GSAP. It includes 3D Models for the iPhone 16 as
+                      well as the iPhone 16 Pro. You can change the size as well as the color of the models.
+                      The website should be viewable on mobile, tablets, laptops, and desktops.`,
+    title: "iPhone 16",
+    usage: [
+      {
+        title: "Typescript",
+        description: "Building reusable components.",
+        icon: "typescript",
+      },
+      {
+        title: "Javascript",
+        description: `Vanilla JS for useEffect animations`,
+        icon: "javascript",
+      },
+      {
+        title: "ThreeJS",
+        description: "Beautiful 3D Rendering of various iPhone 16 Models.",
+        icon: "threeJS",
+      },
+    ],
+    image: iPhone16,
+    github: "https://github.com/syedwajihrizvi/iPhone16",
+    viewProject: "https://syed-rizvi-iphone-16.netlify.app/",
+  },
+  {
+    description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
+                      It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
+                      Furthermore the website includes 3D Models of the iPhone 15 as well. The model can be interacted with,
+                      the size can be changed, and the color can be changed as well.`,
+    title: "iPhone 15",
+    usage: [
+      {
+        title: "Javascript",
+        description: `Developed front end with ReactJS and vanilla javascript for animations.`,
+        icon: "javascript",
+      },
+      {
+        title: "ThreeJS",
+        description: "Beautiful 3D Rendering of various iPhone 15 Models.",
+        icon: "threeJS",
+      },
+      {
+        title: "Tailwind",
+        description: "Develop reusable classes and beautiful styling.",
+        icon: "tailwind",
+      },
+    ],
+    image: iPhone15,
+    github: "https://github.com/syedwajihrizvi/iPhone15",
+    viewProject: "https://syed-rizvi-iphone-15.netlify.app/",
+  },
+  {
     description: `A social media platform specifically for Rockstar Games. Users can post about their
                      favorite Rockstart games inclusing RDR2, GTA5, GTA6, and RDR1. They can follow each other,
                      comment, like , and find online gaming sessions. I made this cause I'm a big fan of Rockstar Games
@@ -114,34 +198,6 @@ const projects: Array<ProjectType> = [
     image: gamegrid,
     github: "https://github.com/syedwajihrizvi/GameCom",
     viewProject: "https://syed-rizvi-gamecom.netlify.app/",
-  },
-  {
-    description: `An Apple inspired website for the iPhone 16 and iPhone 16 Pro. Contains interactive 3D
-                      Models along with highlights of several features. 3D Models were built with
-                      ThreeJS and animations done with GSAP. It includes 3D Models for the iPhone 16 as
-                      well as the iPhone 16 Pro. You can change the size as well as the color of the models.
-                      The website should be viewable on mobile, tablets, laptops, and desktops.`,
-    title: "iPhone 16",
-    usage: [
-      {
-        title: "Typescript",
-        description: "Building reusable components.",
-        icon: "typescript",
-      },
-      {
-        title: "Javascript",
-        description: `Vanilla JS for useEffect animations`,
-        icon: "javascript",
-      },
-      {
-        title: "ThreeJS",
-        description: "Beautiful 3D Rendering of various iPhone 16 Models.",
-        icon: "threeJS",
-      },
-    ],
-    image: iPhone16,
-    github: "https://github.com/syedwajihrizvi/iPhone16",
-    viewProject: "https://syed-rizvi-iphone-16.netlify.app/",
   },
   {
     description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.
@@ -279,62 +335,6 @@ const projects: Array<ProjectType> = [
     image: yoom,
     github: "https://github.com/syedwajihrizvi/CallingApp",
     viewProject: "https://zoom-video-clone-syed-rizvi.netlify.app/",
-  },
-  {
-    description: `A launch site made for the iPhone 15. Built using ReactJS, GSAP, ThreeJS, and Tailwind.
-                      It contains a beuatiful video carousel that is very similar to what Apple has on its own website.
-                      Furthermore the website includes 3D Models of the iPhone 15 as well. The model can be interacted with,
-                      the size can be changed, and the color can be changed as well.`,
-    title: "iPhone 15",
-    usage: [
-      {
-        title: "Javascript",
-        description: `Developed front end with ReactJS and vanilla javascript for animations.`,
-        icon: "javascript",
-      },
-      {
-        title: "ThreeJS",
-        description: "Beautiful 3D Rendering of various iPhone 15 Models.",
-        icon: "threeJS",
-      },
-      {
-        title: "Tailwind",
-        description: "Develop reusable classes and beautiful styling.",
-        icon: "tailwind",
-      },
-    ],
-    image: iPhone15,
-    github: "https://github.com/syedwajihrizvi/iPhone15",
-    viewProject: "https://syed-rizvi-iphone-15.netlify.app/",
-  },
-  {
-    description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
-                      in an enclosed room. It was built as part of my 4th year univeristy captstone project. The robot would
-                      take in an DXF file which would essentially be a set of coordinates translated from an AutoCAD file. The
-                      algorithm will then determine the best path to navigate the coordinates in the most efficient way possible.
-                      Utilzing its on board LiDar, it uses its localization system to navigate the path in a given room. `,
-    title: "P.A.I.N.T",
-    usage: [
-      {
-        title: "Python",
-        description: `Programmed RasberryPi using Python.`,
-        icon: "python",
-      },
-      {
-        title: "Linux",
-        description: "RasberryPi is Linux based so had to utilize several linux commands.",
-        icon: "linux",
-      },
-      {
-        title: "Excel",
-        description: "Collecting localization data and testing algorithm accuracy.",
-        icon: "excel",
-      },
-    ],
-    iframe: true,
-    videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
-    image: cscape,
-    github: "url",
   },
 ];
 
