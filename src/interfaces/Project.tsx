@@ -1,24 +1,25 @@
 export interface Usage {
-    title: string,
-    description: string,
-    icon: string
+  title: string;
+  description: string;
+  icon: string;
 }
 
 export interface Project {
-    description: string,
-    title: string,
-    usage: Usage[],
-    image: string,
-    github: string,
-    viewProject?: string,
-    status?: string,
-    iframe?: boolean,
-    videos?: string[]
+  description: string;
+  title: string;
+  usage: Usage[];
+  image: string;
+  github: string;
+  viewProject?: string;
+  status?: string;
+  iframe?: boolean;
+  videos?: string[];
+  videoPlaybackSpeed?: number;
 }
 
 export interface MinorProjects {
-    title: string,
-    description: string,
-    tools: string[],
-    github?: string
+  title: string;
+  description: string;
+  tools: string[];
+  github?: string;
 }

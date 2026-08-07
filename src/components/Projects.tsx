@@ -11,6 +11,7 @@ import hirvo from "../assets/images/projects/hirvo/hirvo.png";
 import paintVideoOne from "../assets/videos/paint1.mp4";
 import paintVideoTwo from "../assets/videos/paint2.mp4";
 import paintVideoThree from "../assets/videos/paint3.mp4";
+import ballandbeamVideo from "../assets/videos/balance_beam.mp4";
 import restateVideo from "../assets/videos/restate.mp4";
 import auroVideo from "../assets/videos/auro.mp4";
 
@@ -71,15 +72,48 @@ const projects: Array<ProjectType> = [
         icon: "linux",
       },
       {
-        title: "Excel",
-        description: "Collecting localization data and testing algorithm accuracy.",
-        icon: "excel",
+        title: "MATLAB",
+        description: "Tuning controllers and plotting localization data.",
+        icon: "matlab",
       },
     ],
     iframe: true,
     videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
     image: cscape,
     github: "url",
+  },
+  {
+    description: `A classical control systems project focused on stabilizing and positioning a steel ball on a double-rod beam using an 
+                 inclined lever mechanism driven by a DC servo motor. The system employs an inner-loop discrete controller for precise motor 
+                 gear position tracking and an outer-loop controller for real-time ball position control. Using continuous-to-discrete 
+                 emulation and anti-stiction compensation, the system processes feedback from a resistive potentiometer beam sensor and 
+                 gear angle sensor via an Arduino platform.`,
+    title: "Ball and Beam Balance",
+    usage: [
+      {
+        title: "MATLAB",
+        description:
+          "Used for system identification, pole-placement/lag compensator design, continuous-to-discrete conversion, and extracting precise transfer function coefficients.",
+        icon: "matlab",
+      },
+      {
+        title: "Control Systems",
+        description:
+          "Applied cascaded inner/outer-loop control architecture, classical feedback compensation, discrete-time conversion, and non-linear stiction cancellation algorithms.",
+        icon: "controls",
+      },
+      {
+        title: "Simulink",
+        description:
+          "Utilized to model full system dynamics, simulate step responses, evaluate reference saturators, and verify closed-loop discrete time performance before hardware deployment.",
+        icon: "simulink",
+      },
+    ],
+    iframe: true,
+    videos: [ballandbeamVideo],
+    videoPlaybackSpeed: 2.0,
+    image: cscape,
+    github: "",
   },
   {
     description: `An Apple inspired website for the iPhone 16 and iPhone 16 Pro. Contains interactive 3D
