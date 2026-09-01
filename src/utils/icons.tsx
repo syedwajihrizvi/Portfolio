@@ -15,12 +15,14 @@ import {
   SiReact,
   SiStreamlit,
   SiClerk,
+  SiRos,
 } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandThreejs, TbBrandCSharp, TbEaseInOutControlPoints } from "react-icons/tb";
 import { PiFileSqlFill } from "react-icons/pi";
 import { FaAws } from "react-icons/fa6";
 import { FaJava } from "react-icons/fa";
+import { DiHtml53dEffects } from "react-icons/di";
 import matlabimage from "../assets/images/projects/ballbeam/matlab_icon.png";
 import simulinkimage from "../assets/images/projects/ballbeam/simulink.png";
 
@@ -51,4 +53,6 @@ export const renderIcon = (icon: string, fontSize: string = "1.5rem") => {
   if (icon == "matlab") return <img src={matlabimage} alt="Matlab" width="30px" height="100%" />;
   if (icon == "simulink") return <img src={simulinkimage} alt="Simulink" width="30px" height="100%" />;
   if (icon == "controls") return <TbEaseInOutControlPoints color="#03fc98" fontSize={fontSize} />;
+  if (icon == "ros") return <SiRos color="#03fc98" fontSize={fontSize} />;
+  if (icon == "gazebo") return <DiHtml53dEffects color="#03fc98" fontSize={fontSize} />;
 };

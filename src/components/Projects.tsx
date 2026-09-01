@@ -12,6 +12,8 @@ import paintVideoOne from "../assets/videos/paint1.mp4";
 import paintVideoTwo from "../assets/videos/paint2.mp4";
 import paintVideoThree from "../assets/videos/paint3.mp4";
 import ballandbeamVideo from "../assets/videos/balance_beam.mp4";
+import ece687Video from "../assets/videos/ece_687_video_1.5x.mp4";
+import pathtraversalvideo from "../assets/videos/path-traversal-turtlebot.mp4";
 import restateVideo from "../assets/videos/restate.mp4";
 import auroVideo from "../assets/videos/auro.mp4";
 
@@ -54,12 +56,45 @@ const projects: Array<ProjectType> = [
     viewProject: "https://hirvo.ca/",
   },
   {
+    description: `This project implements autonomous path planning and traversal for a TurtleBot3 in a simulated maze environment.
+                  A custom occupancy grid is generated from the Gazebo world and obstacles are inflated based on the physical
+                  dimensions of the robot. The A* algorithm is then used to determine the shortest collision-free path between
+                  the robot and a selected goal. ROS 2, AMCL, EKF sensor fusion, TF coordinate transformations, and a custom
+                  path-following controller are used to localize the robot and navigate the generated path.`,
+
+    title: "A* Path Traversal for Turtlebot3",
+
+    usage: [
+      {
+        title: "ROS 2",
+        description: "Built ROS 2 nodes for mapping, localization, path planning, and robot control.",
+        icon: "ros",
+      },
+      {
+        title: "Gazebo/Rviz",
+        description: "Simulated the TurtleBot3 and visualized maps, LiDAR data, localization, and planned paths.",
+        icon: "gazebo",
+      },
+      {
+        title: "Python",
+        description: "Implemented A* path planning, obstacle inflation, coordinate conversions, and path traversal.",
+        icon: "python",
+      },
+    ],
+
+    iframe: true,
+    videos: [pathtraversalvideo],
+    videoPlaybackSpeed: 2.0,
+    image: cscape,
+    github: "https://github.com/syedwajihrizvi/astar",
+  },
+  {
     description: `This is an omnidirectional mecanum wheel based autonomous robot which can navigate any given path
                       in an enclosed room. It was built as part of my 4th year univeristy captstone project. The robot would
                       take in an DXF file which would essentially be a set of coordinates translated from an AutoCAD file. The
                       algorithm will then determine the best path to navigate the coordinates in the most efficient way possible.
                       Utilzing its on board LiDar, it uses its localization system to navigate the path in a given room. `,
-    title: "P.A.I.N.T",
+    title: "Autonomous Omnidirectional Robot with Lidar",
     usage: [
       {
         title: "Python",
@@ -112,6 +147,34 @@ const projects: Array<ProjectType> = [
     iframe: true,
     videos: [ballandbeamVideo],
     videoPlaybackSpeed: 2.0,
+    image: cscape,
+    github: "",
+  },
+  {
+    description: `A robot tasked with autonomously navigating to a hockey stick platform, picking it up using a RR Manupilator, and then shooting a puck into a goal. The robot utilized various an NID controller combined
+              with Control Lyanpunov Functions and Control Barrier Functions to achieve each task. Though the robot completed the task in simulation, its physical parameters were not tuned properly to
+              achieve the same results in the real world. `,
+    title: "Hockey Player Robot",
+    usage: [
+      {
+        title: "ROS 2",
+        description: "Develop the various nodes of the project and communicate with other robots.",
+        icon: "ros",
+      },
+      {
+        title: "Python",
+        description: "Programmed the various nodes of the project and implemented the control algorithms.",
+        icon: "python",
+      },
+      {
+        title: "Linux",
+        description: "Utilized several linux commands to run the various nodes and communicate with other robots.",
+        icon: "linux",
+      },
+    ],
+    iframe: true,
+    videos: [ece687Video],
+    videoPlaybackSpeed: 1.0,
     image: cscape,
     github: "",
   },

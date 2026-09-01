@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { List, ListItem, ListItemText, ListItemIcon, Paper } from "@mui/material";
-import { SiTypescript, SiPython, SiJavascript, SiHtml5, SiMongodb } from "react-icons/si";
+import { SiTypescript, SiPython, SiJavascript, SiHtml5, SiMongodb, SiRos } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { PiFileSqlFill } from "react-icons/pi";
 import { FaJava } from "react-icons/fa";
@@ -59,10 +59,10 @@ function About() {
               Syed Wajih Rizvi
             </Typography>
             <Typography variant="h5" className="title">
-              Full Stack Software Engineer
+              Robotics Engineer
             </Typography>
             <Typography variant="body1" className="intro">
-              I build, test, and deploy applications.
+              I focus on controls, AI, and robotics.
             </Typography>
           </MotionBox>
           <MotionBox
@@ -110,12 +110,12 @@ function About() {
               </ListItem>
               <ListItem className="list__item" alignItems="center">
                 <ListItemIcon>
-                  <TbBrandCSharp color="#03fc98" fontSize="3.5rem" />
+                  <SiRos color="#03fc98" fontSize="3.5rem" />
                 </ListItemIcon>
                 <ListItemText
                   primary={
                     <Typography fontWeight="900" className="skill__title">
-                      C#
+                      ROS 2
                     </Typography>
                   }
                 />
@@ -225,6 +225,26 @@ function About() {
           <Typography className="about__text" variant="h6" gutterBottom>
             I hope to continue to develop my skills and surround myself with people who bring out the best of me.
           </Typography>
+          <Box className="education-container" sx={{ display: "flex", gap: "1rem", marginBottom: "1.5rem" }}>
+            <img src={waterlooLogo} alt="University of Waterloo" width="100px" height="100%" />
+            <Box className="education">
+              <Typography variant="h4" color="white" fontWeight={800} letterSpacing={1.2}>
+                Education
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{ lineHeight: 1, marginBottom: "0.5rem", color: "#10b981", fontWeight: 700 }}
+              >
+                Master of Engineering — ECE
+              </Typography>
+              <Typography variant="body1" sx={{ lineHeight: 1.2, color: "#ccc" }}>
+                Specialization in Artificial Intelligence & Machine Learning
+              </Typography>
+              <Typography variant="body2" sx={{ color: "#aaa" }}>
+                University of Waterloo
+              </Typography>
+            </Box>
+          </Box>
           <Box className="education-container" sx={{ display: "flex", gap: "1rem" }}>
             <img src={waterlooLogo} alt="University of Waterloo" width="100px" height="100%" />
             <Box className="education">
