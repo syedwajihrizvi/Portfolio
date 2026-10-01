@@ -1,12 +1,8 @@
 import Box from "@mui/material/Box";
 import Project from "./projects/Project";
-import gamegrid from "../assets/images/projects/gamecom/gamegrid.webp";
-import cscape from "../assets/images/projects/cscape/cscape.webp";
-import yoom from "../assets/images/projects/yoom/yoom.png";
 import airbnb from "../assets/images/projects/airbnb/airbnb.webp";
 import iPhone15 from "../assets/images/projects/apple/iPhone15.png";
 import iPhone16 from "../assets/images/projects/apple/iPhone16.webp";
-import rockServers from "../assets/images/projects/rockservers/rockservers.png";
 import hirvo from "../assets/images/projects/hirvo/hirvo.png";
 import paintVideoOne from "../assets/videos/paint1.mp4";
 import paintVideoTwo from "../assets/videos/paint2.mp4";
@@ -14,8 +10,7 @@ import paintVideoThree from "../assets/videos/paint3.mp4";
 import ballandbeamVideo from "../assets/videos/balance_beam.mp4";
 import ece687Video from "../assets/videos/ece_687_video_1.5x.mp4";
 import pathtraversalvideo from "../assets/videos/path-traversal-turtlebot.mp4";
-import restateVideo from "../assets/videos/restate.mp4";
-import auroVideo from "../assets/videos/auro.mp4";
+import pandaVideo from "../assets/videos/panda_pick_place.mp4";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -56,6 +51,44 @@ const projects: Array<ProjectType> = [
     viewProject: "https://hirvo.ca/",
   },
   {
+    description: `This project implements autonomous pick-and-place manipulation using a 7-DOF Franka Emika Panda robotic arm in simulation.
+                Inverse kinematics is used to compute joint configurations that place the end effector at desired Cartesian positions
+                and orientations, while a joint-space PD controller drives the manipulator toward each target configuration. The system
+                executes a complete manipulation sequence including approach, grasp, lift, transport, placement, gripper actuation, and
+                end-effector retreat. Custom grasp poses and orientations are defined for different objects to account for geometry,
+                reachability, and collision constraints. ROS 2, Gazebo, and RViz are used to control, simulate, and visualize the robot
+                throughout the manipulation pipeline.`,
+
+    title: "Franka Emika Panda Pick and Place",
+
+    usage: [
+      {
+        title: "ROS 2",
+        description:
+          "Built ROS 2 nodes and control logic for commanding the Panda arm, executing manipulation sequences, and controlling the gripper.",
+        icon: "ros",
+      },
+      {
+        title: "Gazebo / RViz",
+        description:
+          "Simulated the 7-DOF Franka Panda and visualized joint motion, end-effector poses, object interaction, and pick-and-place trajectories.",
+        icon: "gazebo",
+      },
+      {
+        title: "Python",
+        description:
+          "Implemented inverse kinematics, joint-space PD control, Cartesian target generation, grasp sequencing, and object-specific manipulation logic.",
+        icon: "python",
+      },
+    ],
+
+    iframe: true,
+    videos: [pandaVideo],
+    videoPlaybackSpeed: 4.0,
+    image: airbnb,
+    github: "https://github.com/syedwajihrizvi/6_dof",
+  },
+  {
     description: `This project implements autonomous path planning and traversal for a TurtleBot3 in a simulated maze environment.
                   A custom occupancy grid is generated from the Gazebo world and obstacles are inflated based on the physical
                   dimensions of the robot. The A* algorithm is then used to determine the shortest collision-free path between
@@ -85,7 +118,7 @@ const projects: Array<ProjectType> = [
     iframe: true,
     videos: [pathtraversalvideo],
     videoPlaybackSpeed: 2.0,
-    image: cscape,
+    image: airbnb,
     github: "https://github.com/syedwajihrizvi/astar",
   },
   {
@@ -114,7 +147,7 @@ const projects: Array<ProjectType> = [
     ],
     iframe: true,
     videos: [paintVideoOne, paintVideoThree, paintVideoTwo],
-    image: cscape,
+    image: airbnb,
     github: "url",
   },
   {
@@ -147,7 +180,7 @@ const projects: Array<ProjectType> = [
     iframe: true,
     videos: [ballandbeamVideo],
     videoPlaybackSpeed: 2.0,
-    image: cscape,
+    image: airbnb,
     github: "",
   },
   {
@@ -175,7 +208,7 @@ const projects: Array<ProjectType> = [
     iframe: true,
     videos: [ece687Video],
     videoPlaybackSpeed: 1.0,
-    image: cscape,
+    image: airbnb,
     github: "",
   },
   {
@@ -234,69 +267,6 @@ const projects: Array<ProjectType> = [
     viewProject: "https://syed-rizvi-iphone-15.netlify.app/",
   },
   {
-    description: `A social media platform specifically for Rockstar Games. Users can post about their
-                     favorite Rockstart games inclusing RDR2, GTA5, GTA6, and RDR1. They can follow each other,
-                     comment, like , and find online gaming sessions. I made this cause I'm a big fan of Rockstar Games
-                     and this project was done specifically for them.`,
-    title: "Rockstar Games Hub",
-    usage: [
-      {
-        title: "Typescript",
-        description: "Building reusable components.",
-        icon: "typescript",
-      },
-      {
-        title: "SQL",
-        description: `Database was made using MySql`,
-        icon: "sql",
-      },
-      {
-        title: "C#",
-        description: "The backend using ASP.NET and WebAPI",
-        icon: "c#",
-      },
-      {
-        title: "AWS",
-        description: "Cloud storage for image and video",
-        icon: "aws",
-      },
-    ],
-    image: rockServers,
-    github: "https://github.com/syedwajihrizvi/RockServers",
-    viewProject: "https://rockstarcommunityhub.netlify.app/",
-  },
-  {
-    description: `A website that serves millions of games from the IGDB API. Create your account,
-                browse any game you want, view game trailers, plots, summaries, and reviews. The front end
-                was made using React and the Chakra UI library. I made the back end using NodeJS, which
-                was paired with a MongoDB database. This was one of the first projects I worked on and
-                it really helped introduce me to many full stack concepts. Make sure to visit the
-                website and give it a spin. You have to create your account first, but remember NOT to provide
-                real information, this is only a demo website!`,
-    title: "GameCom",
-    usage: [
-      {
-        title: "Typescript",
-        description: "Developed front end with ReactTS and Chakra UI.",
-        icon: "typescript",
-      },
-      {
-        title: "Javascript",
-        description:
-          "Used to build backend server with Node JS. Utilized express and mongoose to develop compatible API.",
-        icon: "javascript",
-      },
-      {
-        title: "MongoDB",
-        description: "Built backend database with MongoDB. Simple, non-relational, and surprisingly scalable.",
-        icon: "mongodb",
-      },
-    ],
-    image: gamegrid,
-    github: "https://github.com/syedwajihrizvi/GameCom",
-    viewProject: "https://syed-rizvi-gamecom.netlify.app/",
-  },
-  {
     description: `A responsive landing page I made for Airbnb. Just some basic HTML, CSS, and vanilla JS.
                      I'm a huge fan of the look and feel of the Airbnb brand. I decided to make my own landing page for
                      the company. It sort of a parady.`,
@@ -323,115 +293,6 @@ const projects: Array<ProjectType> = [
     image: airbnb,
     github: "https://github.com/syedwajihrizvi/Airbnb",
     viewProject: "https://syed-rizvi-air-bnb-parody.netlify.app",
-  },
-  {
-    description: `Built this using React Native. This was the second ever app I buil. Explored various
-                      react-native concepts dealing with animations, uploading files, and proper tabs. The
-                      coolest part about this was definetly the animations. The trending section in specific
-                      was animated using the react-native-animatable library. `,
-    title: "Auro",
-    usage: [
-      {
-        title: "React Native",
-        description: `Developed front end of application.`,
-        icon: "react-native",
-      },
-      {
-        title: "Tailwind",
-        description: "Easy to use inline styles",
-        icon: "tailwind",
-      },
-    ],
-    iframe: true,
-    videos: [auroVideo],
-    image: cscape,
-    github: "https://github.com/syedwajihrizvi/Auro.git",
-  },
-  {
-    description: `An application that allows you to explore the various points of interests in any city around
-                      the world! View destinations such as cafes, museums, restaurants, amusement parks, and various other
-                      points of interest. Get valuable information such as reviews, opening times, website, and contact info.
-                      Plan out the entire trip in any city and feed all the places you want to visit into the AI powered backend
-                      which willl generate the most effective trip plan for you based on various factors including weather, cost, and time.`,
-    title: "CScape",
-    usage: [
-      {
-        title: "Typescript",
-        description: `Developed front end with React TS and Material UI.`,
-        icon: "typescript",
-      },
-      {
-        title: "Javascript",
-        description: "Used to build server with Node JS. Utilized mongoose and express to develop compatible API.",
-        icon: "javascript",
-      },
-      {
-        title: "Python",
-        description: "Developed alogrithm to calculate most efficient trip plan and implement odometric equations",
-        icon: "python",
-      },
-    ],
-    image: cscape,
-    github: "https://github.com/syedwajihrizvi/CScape",
-    viewProject: "https://cscape.netlify.app",
-  },
-  {
-    description: `The first mobile application I ever built. Utilized React Native with Expo to build it. 
-                      The backend was made using Appwrite. Appwrite it a free to use web service that essentially
-                      provides a wrapped backend for your application. The main focus of this app was just to expose
-                      myself to React Native. I learned about the navigation system, the different components such as Views, Flatlist,
-                      and Tabs, furthermore I also was able to transfer a lot of my React Web developemt skills over. I built
-                      a slide show, however the animations were not working on mobile. Since this was my first, I focused mainly just
-                      on the structure and basic functionality. `,
-    title: "Restate",
-    usage: [
-      {
-        title: "React Native",
-        description: `Developed front end of application and build reusuable components.`,
-        icon: "react-native",
-      },
-      {
-        title: "Nativewind",
-        description: "Easy to use inline styles",
-        icon: "tailwind",
-      },
-      {
-        title: "Appwrite",
-        description: "Backend for storage and authentication",
-        icon: "appwrite",
-      },
-    ],
-    iframe: true,
-    videos: [restateVideo],
-    image: cscape,
-    github: "https://github.com/syedwajihrizvi/Restate.git",
-  },
-  {
-    description: `This was a replica for the Zoom application. It was built using NextTS, along with popular libraries
-                     such  as Clerk for authentication and Stream for implementing calling. The app was also using ShadCN for
-                     beutiful ready-made components that were reusable and also customizable. This app allowed users to schedule
-                     meetings, join meetings, start personal rooms, and view saved recordings.`,
-    title: "Cally",
-    usage: [
-      {
-        title: "Typescript",
-        description: `Developed front end with Next TS and ShadCN.`,
-        icon: "typescript",
-      },
-      {
-        title: "Tailwind",
-        description: "Easy to use inline styles.",
-        icon: "javascript",
-      },
-      {
-        title: "Stream",
-        description: "Implement calling features such as video, audio, and recordings.",
-        icon: "stream",
-      },
-    ],
-    image: yoom,
-    github: "https://github.com/syedwajihrizvi/CallingApp",
-    viewProject: "https://zoom-video-clone-syed-rizvi.netlify.app/",
   },
 ];
 
